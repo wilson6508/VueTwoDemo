@@ -19,7 +19,7 @@ export default {
   name: "Navigation",
   data() {
     return {
-      test: 1234,
+      test: 123,
     };
   },
 };
