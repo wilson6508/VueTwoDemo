@@ -1,27 +1,53 @@
 import Vue from "vue";
 import VueRouter from 'vue-router'
-import Home from "@/components/2_home/Home.vue"
 
 Vue.use(VueRouter);
 
 const routes = [{
         path: "/",
-        meta: {
-            title: "根目錄"
+        redirect: {
+            path: "/Description",
         },
     },
     {
-        path: "/Home",
-        component: Home,
+        path: "*",
+        redirect: {
+            path: "/Description",
+        },
+    },
+    {
+        path: "/Description",
+        component: () => import("@/components/Description.vue"),
         meta: {
-            title: "首頁"
+            title: "功能說明"
+        },
+    },
+    {
+        path: "/BasicDemo",
+        component: () => import("@/components/BasicDemo.vue"),
+        meta: {
+            title: "功能展示"
+        },
+    },
+    {
+        path: "/ChinaTest",
+        component: () => import("@/components/ChinaTest.vue"),
+        meta: {
+            title: "中國測試"
+        },
+    },
+    {
+        path: "/DownloadTest",
+        component: () => import("@/components/DownloadTest.vue"),
+        meta: {
+            title: "下載測試"
         },
     },
 ];
 
 const router = new VueRouter({
     mode: "history",
-    base: process.env.BASE_URL,
+    base: process.env.VUE_APP_BASE_URL,
     routes,
 });
 

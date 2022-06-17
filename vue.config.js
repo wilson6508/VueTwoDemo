@@ -1,3 +1,3 @@
 module.exports = {
-    publicPath: '/VueTwoDemo/'
+    publicPath: process.env.VUE_APP_BASE_URL
 }

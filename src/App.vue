@@ -1,12 +1,14 @@
 <template>
   <div>
     <Navigation />
-    <router-view />
+    <keep-alive include="BasicDemo">
+      <router-view />
+    </keep-alive>
   </div>
 </template>
 
 <script>
-import Navigation from "@/components/1_navigation/Navigation.vue";
+import Navigation from "@/components/Navigation.vue";
 
 export default {
   name: "App",
