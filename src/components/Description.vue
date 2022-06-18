@@ -1,85 +1,108 @@
 <template>
-  <div class="m-4">
-    <div id="item_left" class="alert alert-primary" style="width: 200px"></div>
-    <div id="item_right" class="alert alert-primary" style="width: 200px"></div>
-    <button @click="test">OK</button>
-    <button @click="test2">OK</button>
+  <div class="row m-5 text-center">
+    <div class="col-2"></div>
+    <div class="card col-8">
+      <div class="card-body" style="height: 650px">
+        <ul class="nav nav-tabs">
+          <li class="nav-item" v-for="tab in tabArr" :key="tab.value">
+            <span
+              class="nav-link my-tab"
+              :class="{ active: tab.value === chooseTab }"
+              @click="chooseTab = tab.value"
+            >
+              {{ tab.label }}
+            </span>
+          </li>
+        </ul>
+        <div
+          class="mt-4"
+          v-for="(table, key) in infoObj"
+          :key="key"
+          v-show="key === chooseTab"
+        >
+          <BasicTable :tableInfo="table" />
+        </div>
+      </div>
+    </div>
+    <div class="col-2"></div>
   </div>
 </template>
 
 <script>
-/* eslint-disable */
-import { jsPlumb } from "jsplumb";
+import BasicTable from "@/components/BasicTable.vue";
 
 export default {
   name: "Description",
+  components: {
+    BasicTable,
+  },
   data() {
-    return {};
+    return {
+      chooseTab: "plugin",
+      tabArr: [
+        { value: "plugin", label: "使用套件" },
+        { value: "schedule", label: "工作日程" },
+        { value: "reference", label: "參考資料" },
+      ],
+      infoObj: {
+        plugin: {
+          columns: [
+            { key: "col1", label: "使用套件" },
+            { key: "col2", label: "主要用途" },
+          ],
+          rows: [
+            { col1: "jsplumb", col2: "連線功能、移動區塊功能" },
+            { col1: "vuedraggable", col2: "拖曳功能" },
+            { col1: "nanoid", col2: "建立uuid" },
+            { col1: "bootstrap", col2: "版面CSS" },
+          ],
+        },
+        schedule: {
+          columns: [
+            { key: "col1", label: "項目" },
+            { key: "col2", label: "工時" },
+          ],
+          rows: [
+            { col1: "找尋套件", col2: "大約 4 個小時" },
+            { col1: "閱讀資料", col2: "大約 6 個小時" },
+            { col1: "主要功能", col2: "大約 12 個小時" },
+            { col1: "額外功能", col2: "大約 4 個小時" },
+            { col1: "其它", col2: "大約 4 個小時" },
+          ],
+        },
+        reference: {
+          columns: [
+            { key: "col1", label: "參考資料" },
+            { key: "col2", label: "參考網址" },
+          ],
+          rows: [
+            {
+              col1: "jsPlumb",
+              col2: "https://docs.jsplumbtoolkit.com/community/lib/anchors",
+            },
+            {
+              col1: "jsplumb 中文基础教程",
+              col2: "https://wdd.js.org/jsplumb-chinese-tutorial/#/",
+            },
+            {
+              col1: "Jsplumb基础教程(vue+jsplumb+d3)",
+              col2: "https://blog.csdn.net/weixin_39085822/article/details/106879459",
+            },
+            {
+              col1: "jsPlumb應用指南(一)概念部分",
+              col2: "https://www.twblogs.net/a/5cfe4bdebd9eee14029f03c5",
+            },
+          ],
+        },
+      },
+    };
   },
-  methods: {
-    test() {
-      const jspObj = jsPlumb.getInstance();
-      jspObj.connect({
-        source: "item_left",
-        target: "item_right",
-        endpoint: "Rectangle",
-      });
-
-      jspObj.draggable("item_left");
-      jspObj.draggable("item_right");
-
-      jspObj.bind("click", function (conn, originalEvent) {
-        jsPlumb.remove(conn.targetId + "");
-      });
-
-      // const common = {
-      //   endpoint: "Rectangle",
-      //   connector: ["Bezier"],
-      //   anchor: ["Left", "Right"],
-      // };
-      // const jspObj = jsPlumb.getInstance();
-      // jspObj.connect(
-      //   {
-      //     source: "item_left",
-      //     target: "item_right",
-      //     paintStyle: { stroke: "lightgray", strokeWidth: 3 },
-      //     endpointStyle: {
-      //       fill: "lightgray",
-      //       outlineStroke: "darkgray",
-      //       outlineWidth: 2,
-      //     },
-      //     overlays: [["Arrow", { width: 12, length: 12, location: 0.5 }]],
-      //   },
-      //   common
-      // );
-      // jspObj.draggable("item_left");
-      // jspObj.draggable("item_right");
-    },
-    test2() {
-      const jspObj = jsPlumb.getInstance();
-      jspObj.remove("item_left");
-    },
-  },
-  // beforeDestroy() {
-  //   jspObj = null;
-  // },
-  // mounted() {
-  //   jspObj.ready(() => {
-  //     jspObj.connect({
-  //       source: "item_left",
-  //       target: "item_right",
-  //       endpoint: "Dot",
-  //     });
-  //   });
-  // },
 };
 </script>
 
 <style scoped>
-.item {
-  height: 80px;
-  width: 80px;
-  border: 1px solid blue;
-  float: left;
+.my-tab {
+  color: black;
+  cursor: pointer;
 }
 </style>

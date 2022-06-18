@@ -19,7 +19,7 @@ const routes = [{
         path: "/Description",
         component: () => import("@/components/Description.vue"),
         meta: {
-            title: "說明文字"
+            title: "文字說明"
         },
     },
     {
