@@ -26,32 +26,37 @@
     <div class="col-2">
       <div class="card">
         <div class="card-body" style="height: 650px">
-          <Draggable @end="setItem">
-            <div
-              class="m-3 blue-item"
-              v-for="(item, index) in leftItems"
-              :key="index"
-            >
-              {{ item }}
-            </div>
+          <Draggable
+            v-for="(item, index) in leftItems"
+            :key="index"
+            @end="setItem"
+          >
+            <div class="m-3 blue-item">{{ item }}</div>
           </Draggable>
         </div>
       </div>
     </div>
     <div class="col-10">
       <div class="card">
-        <div class="card-body" id="regionId" ref="region" style="height: 650px">
+        <Draggable>
           <div
-            class="blue-item"
-            style="position: absolute; width: 220px"
-            v-for="(item, index) in rightItems"
-            :key="index"
-            :id="item.id"
-            :style="{ left: item.left, top: item.top }"
+            class="card-body"
+            id="regionId"
+            ref="region"
+            style="height: 650px"
           >
-            {{ item.label }}
+            <div
+              class="blue-item"
+              style="position: absolute; width: 220px"
+              v-for="(item, index) in rightItems"
+              :key="index"
+              :id="item.id"
+              :style="{ left: item.left, top: item.top }"
+            >
+              {{ item.label }}
+            </div>
           </div>
-        </div>
+        </Draggable>
       </div>
     </div>
   </div>
