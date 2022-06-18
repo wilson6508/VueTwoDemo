@@ -4,8 +4,7 @@
       <div class="collapse navbar-collapse show">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <div v-for="(item, itemIndex) in routesArr" :key="itemIndex">
-            <!--無children-->
-            <li v-if="item.children.length === 0" class="me-2">
+            <li class="me-2">
               <router-link
                 class="nav-link"
                 active-class="active"
@@ -27,10 +26,10 @@ export default {
   data() {
     return {
       routesArr: [
-        { label: "功能說明", path: "/Description", children: [] },
-        { label: "功能展示", path: "/BasicDemo", children: [] },
-        { label: "中國測試", path: "/ChinaTest", children: [] },
-        { label: "下載測試", path: "/DownloadTest", children: [] },
+        { label: "說明文字", path: "/Description" },
+        { label: "功能展示", path: "/FlowChart" },
+        { label: "中國測試", path: "/ChinaTest" },
+        { label: "下載測試", path: "/DownloadTest" },
       ],
     };
   },

@@ -6,25 +6,25 @@ Vue.use(VueRouter);
 const routes = [{
         path: "/",
         redirect: {
-            path: "/Description",
+            path: "/FlowChart",
         },
     },
     {
         path: "*",
         redirect: {
-            path: "/Description",
+            path: "/FlowChart",
         },
     },
     {
         path: "/Description",
         component: () => import("@/components/Description.vue"),
         meta: {
-            title: "功能說明"
+            title: "說明文字"
         },
     },
     {
-        path: "/BasicDemo",
-        component: () => import("@/components/BasicDemo.vue"),
+        path: "/FlowChart",
+        component: () => import("@/components/FlowChart.vue"),
         meta: {
             title: "功能展示"
         },
