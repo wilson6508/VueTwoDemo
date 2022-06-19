@@ -5,21 +5,12 @@
       <div class="card-body" style="height: 650px">
         <ul class="nav nav-tabs">
           <li class="nav-item" v-for="tab in tabArr" :key="tab.value">
-            <span
-              class="nav-link my-tab"
-              :class="{ active: tab.value === chooseTab }"
-              @click="chooseTab = tab.value"
-            >
+            <span class="nav-link my-tab" :class="{ active: tab.value === chooseTab }" @click="chooseTab = tab.value">
               {{ tab.label }}
             </span>
           </li>
         </ul>
-        <div
-          class="mt-4"
-          v-for="(table, key) in infoObj"
-          :key="key"
-          v-show="key === chooseTab"
-        >
+        <div class="mt-4" v-for="(table, key) in infoObj" :key="key" v-show="key === chooseTab">
           <BasicTable :tableInfo="table" />
         </div>
       </div>

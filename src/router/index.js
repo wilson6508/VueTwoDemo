@@ -3,7 +3,8 @@ import VueRouter from 'vue-router'
 
 Vue.use(VueRouter);
 
-const routes = [{
+const routes = [
+    {
         path: "/",
         redirect: {
             path: "/FlowChart",
@@ -27,20 +28,6 @@ const routes = [{
         component: () => import("@/components/FlowChart.vue"),
         meta: {
             title: "功能展示"
-        },
-    },
-    {
-        path: "/ChinaTest",
-        component: () => import("@/components/ChinaTest.vue"),
-        meta: {
-            title: "中國測試"
-        },
-    },
-    {
-        path: "/DownloadTest",
-        component: () => import("@/components/DownloadTest.vue"),
-        meta: {
-            title: "下載測試"
         },
     },
 ];

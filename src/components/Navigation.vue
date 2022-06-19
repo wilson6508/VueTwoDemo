@@ -10,8 +10,9 @@
                 active-class="active"
                 style="color: white"
                 :to="item.path"
-                >{{ item.label }}</router-link
               >
+                {{ item.label }}
+              </router-link>
             </li>
           </div>
         </ul>
@@ -28,8 +29,6 @@ export default {
       routesArr: [
         { label: "文字說明", path: "/Description" },
         { label: "功能展示", path: "/FlowChart" },
-        { label: "中國測試", path: "/ChinaTest" },
-        { label: "下載測試", path: "/DownloadTest" },
       ],
     };
   },

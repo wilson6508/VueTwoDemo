@@ -1,36 +1,14 @@
 <template>
   <div class="row m-4">
     <div class="col-12 text-end mb-3">
-      <button
-        type="button"
-        class="btn btn-primary btn-sm ms-2"
-        @click="saveFile"
-      >
-        儲存檔案
-      </button>
-      <button
-        type="button"
-        class="btn btn-primary btn-sm ms-2"
-        @click="readFile"
-      >
-        讀取檔案
-      </button>
-      <button
-        type="button"
-        class="btn btn-danger btn-sm ms-2"
-        @click="clearArea"
-      >
-        清空版面
-      </button>
+      <button type="button" class="btn btn-primary btn-sm ms-2" @click="saveFile">儲存檔案</button>
+      <button type="button" class="btn btn-primary btn-sm ms-2" @click="readFile">讀取檔案</button>
+      <button type="button" class="btn btn-danger btn-sm ms-2" @click="clearArea">清空版面</button>
     </div>
     <div class="col-2">
       <div class="card">
         <div class="card-body" style="height: 650px">
-          <Draggable
-            v-for="(item, index) in leftItems"
-            :key="index"
-            @end="setItem"
-          >
+          <Draggable v-for="(item, index) in leftItems" :key="index" @end="setItem">
             <div class="m-3 blue-item">{{ item }}</div>
           </Draggable>
         </div>
@@ -39,12 +17,7 @@
     <div class="col-10">
       <div class="card">
         <Draggable>
-          <div
-            class="card-body"
-            id="regionId"
-            ref="region"
-            style="height: 650px"
-          >
+          <div class="card-body" id="regionId" ref="region" style="height: 650px">
             <div
               class="blue-item"
               style="position: absolute; width: 220px"
@@ -115,14 +88,8 @@ export default {
     // 設置右側元件
     setItem(event) {
       const { clientX, clientY } = event.originalEvent;
-      const { left, top, width, height } =
-        this.$refs.region.getBoundingClientRect();
-      if (
-        clientX > left &&
-        clientX < left + width &&
-        clientY > top &&
-        clientY < top + height
-      ) {
+      const { left, top, width, height } = this.$refs.region.getBoundingClientRect();
+      if (clientX > left && clientX < left + width && clientY > top && clientY < top + height) {
         const mainId = nanoid();
         const label = event.item.innerText;
         this.rightItems.push({
