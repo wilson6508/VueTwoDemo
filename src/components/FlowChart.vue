@@ -1,10 +1,12 @@
 <template>
   <div class="row m-4">
+    <!--3個按鈕-->
     <div class="col-12 text-end mb-3">
       <button type="button" class="btn btn-primary btn-sm ms-2" @click="saveFile">儲存檔案</button>
       <button type="button" class="btn btn-primary btn-sm ms-2" @click="readFile">讀取檔案</button>
       <button type="button" class="btn btn-danger btn-sm ms-2" @click="clearArea">清空版面</button>
     </div>
+    <!--左邊元件欄-->
     <div class="col-2">
       <div class="card">
         <div class="card-body" style="height: 650px">
@@ -14,6 +16,7 @@
         </div>
       </div>
     </div>
+    <!--右邊畫布-->
     <div class="col-10">
       <div class="card">
         <Draggable>
