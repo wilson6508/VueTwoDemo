@@ -74,9 +74,13 @@ export default {
   },
   data() {
     return {
+      // 左側元件
       leftItems: ["A", "B"],
+      // 右側元件
       rightItems: [],
+      // jsPlumb工具
       jsPlumbObj: null,
+      // 錨點樣式
       anchorStyle: {
         isSource: true,
         isTarget: true,
@@ -108,6 +112,7 @@ export default {
     this.jsPlumbObj = jsPlumb.getInstance();
   },
   methods: {
+    // 設置右側元件
     setItem(event) {
       const { clientX, clientY } = event.originalEvent;
       const { left, top, width, height } =
@@ -118,64 +123,74 @@ export default {
         clientY > top &&
         clientY < top + height
       ) {
-        const uuid = nanoid();
+        const mainId = nanoid();
         const label = event.item.innerText;
         this.rightItems.push({
-          id: uuid,
+          id: mainId,
           label: label,
           top: clientY - top - 30 + "px",
           left: clientX - left - 110 + "px",
         });
         this.$nextTick(() => {
-          this.setAnchor(uuid, label);
+          this.setAnchor(mainId, label);
         });
       }
     },
-    setAnchor(uuid, label) {
+    // 設置元件錨點
+    setAnchor(mainId, label) {
       const isBottom = label === "B";
       const tempArr = [
-        { xVal: 0.25, yVal: +isBottom },
-        { xVal: 0.5, yVal: +!isBottom },
-        { xVal: 0.75, yVal: +isBottom },
+        { xVal: 0.25, yVal: +isBottom, uuid: mainId + "0.25" },
+        { xVal: 0.5, yVal: +!isBottom, uuid: mainId + "0.5" },
+        { xVal: 0.75, yVal: +isBottom, uuid: mainId + "0.75" },
       ];
       for (const temp of tempArr) {
         this.jsPlumbObj.addEndpoint(
-          uuid,
-          { anchor: [temp.xVal, temp.yVal, 0, 0] },
+          mainId,
+          { anchor: [temp.xVal, temp.yVal, 0, 0], uuid: temp.uuid },
           this.anchorStyle
         );
       }
-      this.jsPlumbObj.draggable(uuid, { containment: "regionId" }); // 限制節點拖曳區域
+      this.jsPlumbObj.draggable(mainId, { containment: "regionId" }); // 限制節點拖曳區域
     },
+    // 儲存於localStorage
     saveFile() {
-      // sessionStorage.setItem("msg03", JSON.stringify(this.rightItems));
-      const tempArr = [];
-      for (const temp of this.jsPlumbObj.getConnections()) {
-        tempArr.push({
-          sourceId: temp.sourceId,
-          targetId: temp.targetId,
+      const positionArr = this.rightItems.map((e) => {
+        const domObj = document.getElementById(e.id);
+        e.top = domObj.style.top;
+        e.left = domObj.style.left;
+        return e;
+      });
+      localStorage.setItem("positionArr", JSON.stringify(positionArr));
+      const lineArr = [];
+      for (const line of this.jsPlumbObj.getAllConnections()) {
+        lineArr.push({
+          sourceId: line.sourceId + line.endpoints[0].anchor.x,
+          targetId: line.targetId + line.endpoints[1].anchor.x,
         });
       }
-      this.jsPlumbObj.deleteEveryEndpoint();
-      setTimeout(() => {
-        for (const item of tempArr) {
-          this.jsPlumbObj.connect({
-            source: item.sourceId,
-            target: item.targetId,
-          });
-        }
-      }, 2000);
+      localStorage.setItem("lineArr", JSON.stringify(lineArr));
     },
+    // 讀取localStorage
     readFile() {
       this.clearArea();
-      const result = sessionStorage.getItem("msg03");
-      for (const item of JSON.parse(result)) {
-        this.rightItems.push(item);
-      }
       this.$nextTick(() => {
-        this.rightItems.forEach((e) => this.addOneAnchor(e.id));
+        const positionArr = localStorage.getItem("positionArr");
+        for (const item of JSON.parse(positionArr)) {
+          this.rightItems.push(item);
+        }
+        this.$nextTick(() => {
+          this.rightItems.forEach((e) => this.setAnchor(e.id, e.label));
+          const lineArr = localStorage.getItem("lineArr");
+          for (const item of JSON.parse(lineArr)) {
+            this.jsPlumbObj.connect({
+              uuids: [item.sourceId, item.targetId],
+            });
+          }
+        });
       });
     },
+    // 清除版面
     clearArea() {
       this.jsPlumbObj.deleteEveryEndpoint();
       this.rightItems = [];

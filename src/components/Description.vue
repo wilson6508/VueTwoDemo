@@ -64,10 +64,9 @@ export default {
           ],
           rows: [
             { col1: "找尋套件", col2: "大約 4 個小時" },
-            { col1: "閱讀資料", col2: "大約 6 個小時" },
-            { col1: "主要功能", col2: "大約 12 個小時" },
-            { col1: "額外功能", col2: "大約 4 個小時" },
-            { col1: "其它", col2: "大約 4 個小時" },
+            { col1: "閱讀資料", col2: "大約 4 個小時" },
+            { col1: "編寫功能", col2: "大約 16 個小時" },
+            { col1: "其它", col2: "大約 8 個小時" },
           ],
         },
         reference: {
@@ -77,7 +76,7 @@ export default {
           ],
           rows: [
             {
-              col1: "jsPlumb",
+              col1: "jsPlumb Anchors",
               col2: "https://docs.jsplumbtoolkit.com/community/lib/anchors",
             },
             {
@@ -91,6 +90,18 @@ export default {
             {
               col1: "jsPlumb應用指南(一)概念部分",
               col2: "https://www.twblogs.net/a/5cfe4bdebd9eee14029f03c5",
+            },
+            {
+              col1: "use existing endpoints to connect",
+              col2: "https://stackoverflow.com/questions/22244492",
+            },
+            {
+              col1: "實現多列表一對多連線效果",
+              col2: "https://www.gushiciku.cn/pl/gze2/zh-hk",
+            },
+            {
+              col1: "Save and Load jsPlumb flowchart",
+              col2: "https://stackoverflow.com/questions/20620719",
             },
           ],
         },
