@@ -103,7 +103,7 @@ export default {
         });
       }
     },
-    // 設置元件錨點
+    // 設置右側元件錨點
     setAnchor(mainId, label) {
       const isBottom = label === "B";
       const tempArr = [
@@ -140,6 +140,9 @@ export default {
     },
     // 讀取localStorage
     readFile() {
+      if (!localStorage.getItem("positionArr")) {
+        return;
+      }
       this.clearArea();
       this.$nextTick(() => {
         const positionArr = localStorage.getItem("positionArr");
