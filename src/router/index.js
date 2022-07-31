@@ -3,8 +3,7 @@ import VueRouter from 'vue-router'
 
 Vue.use(VueRouter);
 
-const routes = [
-    {
+const routes = [{
         path: "/",
         redirect: {
             path: "/FlowChart",
@@ -28,6 +27,13 @@ const routes = [
         component: () => import("@/components/FlowChart.vue"),
         meta: {
             title: "功能展示"
+        },
+    },
+    {
+        path: "/CacheBasic",
+        component: () => import("@/components/cache/CacheBasic.vue"),
+        meta: {
+            title: "緩存基礎"
         },
     },
 ];

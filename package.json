@@ -15,6 +15,7 @@
     "jsplumb": "^2.15.6",
     "nanoid": "^3.3.4",
     "vue": "^2.6.11",
+    "vue-code-highlight": "^0.7.8",
     "vue-router": "^3.5.4",
     "vuedraggable": "^2.24.3"
   },
