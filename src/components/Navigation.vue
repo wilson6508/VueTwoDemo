@@ -28,7 +28,7 @@ export default {
     return {
       routesArr: [
         { label: "文字說明", path: "/Description" },
-        { label: "功能展示", path: "/FlowChart" },
+        // { label: "功能展示", path: "/FlowChart" },
       ],
     };
   },
