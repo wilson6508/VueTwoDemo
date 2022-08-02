@@ -61,10 +61,10 @@ export default {
           ],
         },
         {
-          label: "運動賽事",
+          label: "LeetCodeArray",
           path: "",
           children: [
-            { label: "美國職棒1", path: "11" },
+            { label: "TwoSum", path: "/TwoSum" },
             { label: "美國職棒2", path: "22" },
             { label: "美國職棒3", path: "33" },
           ],

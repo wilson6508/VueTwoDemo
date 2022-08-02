@@ -11,8 +11,16 @@
 
 <script>
 import CodeHighlight from "vue-code-highlight/src/CodeHighlight.vue";
-import "vue-code-highlight/themes/duotone-sea.css";
+import "vue-code-highlight/themes/prism-tomorrow.css"; // V
 import "vue-code-highlight/themes/window.css";
+// import "vue-code-highlight/themes/duotone-sea.css";
+// import "vue-code-highlight/themes/prism-coy.css";
+// import "vue-code-highlight/themes/prism-dark.css";
+// import "vue-code-highlight/themes/prism-funky.css";
+// import "vue-code-highlight/themes/prism-okaidia.css"; // V
+// import "vue-code-highlight/themes/prism-solarizedlight.css";
+// import "vue-code-highlight/themes/prism-twilight.css";
+// import "vue-code-highlight/themes/prism.css"; // V
 export default {
   name: "CodeContainer",
   components: {
@@ -23,7 +31,21 @@ export default {
     language: String,
     width: {
       type: Number,
-      default: 70,
+      default: () => {
+        const mobileDevices = [
+          "Android",
+          "webOS",
+          "iPhone",
+          "iPad",
+          "iPod",
+          "BlackBerry",
+          "Windows Phone",
+        ];
+        const isMobileDevice = mobileDevices.some((e) =>
+          navigator.userAgent.match(e)
+        );
+        return isMobileDevice ? 100 : 70;
+      },
     },
   },
 };

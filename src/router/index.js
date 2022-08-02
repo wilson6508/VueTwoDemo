@@ -36,6 +36,13 @@ const routes = [{
             title: "緩存基礎"
         },
     },
+    {
+        path: "/TwoSum",
+        component: () => import("@/components/leetCodeArray/TwoSum.vue"),
+        meta: {
+            title: "TwoSum"
+        },
+    },
 ];
 
 const router = new VueRouter({
