@@ -1,11 +1,11 @@
 <template>
   <div>
     <h2>{{ title }}</h2>
-    <div :style="`width: ${width}%`">
-      <code-highlight :language="language">
-        <slot name="sourceCode" />
-      </code-highlight>
-    </div>
+    <!-- <div :style="`width: ${width}%`"> -->
+    <code-highlight :language="language">
+      <slot name="sourceCode" />
+    </code-highlight>
+    <!-- </div> -->
   </div>
 </template>
 
@@ -28,7 +28,10 @@ export default {
   },
   props: {
     title: String,
-    language: String,
+    language: {
+      type: String,
+      default: () => "js",
+    },
     width: {
       type: Number,
       default: () => {
@@ -44,7 +47,7 @@ export default {
         const isMobileDevice = mobileDevices.some((e) =>
           navigator.userAgent.match(e)
         );
-        return isMobileDevice ? 100 : 70;
+        return isMobileDevice ? 100 : 50;
       },
     },
   },

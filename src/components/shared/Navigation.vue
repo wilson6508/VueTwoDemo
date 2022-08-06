@@ -61,11 +61,13 @@ export default {
           ],
         },
         {
-          label: "LeetCodeArray",
+          label: "LeetCode",
           path: "",
           children: [
-            { label: "TwoSum", path: "/TwoSum" },
-            { label: "美國職棒2", path: "22" },
+            { label: "1_TwoSum", path: "/1_TwoSum" },
+            { label: "9_PalindromeNumber", path: "/9_PalindromeNumber" },
+            { label: "12_IntegerToRoman", path: "/12_IntegerToRoman" },
+            { label: "20_ValidParentheses", path: "/20_ValidParentheses" },
             { label: "美國職棒3", path: "33" },
           ],
         },

@@ -37,10 +37,31 @@ const routes = [{
         },
     },
     {
-        path: "/TwoSum",
-        component: () => import("@/components/leetCodeArray/TwoSum.vue"),
+        path: "/1_TwoSum",
+        component: () => import("@/components/leetCode/1_TwoSum.vue"),
         meta: {
-            title: "TwoSum"
+            title: "1_TwoSum"
+        },
+    },
+    {
+        path: "/9_PalindromeNumber",
+        component: () => import("@/components/leetCode/9_PalindromeNumber.vue"),
+        meta: {
+            title: "9_PalindromeNumber"
+        },
+    },
+    {
+        path: "/12_IntegerToRoman",
+        component: () => import("@/components/leetCode/12_IntegerToRoman.vue"),
+        meta: {
+            title: "12_IntegerToRoman"
+        },
+    },
+    {
+        path: "/20_ValidParentheses",
+        component: () => import("@/components/leetCode/20_ValidParentheses.vue"),
+        meta: {
+            title: "20_ValidParentheses"
         },
     },
 ];
