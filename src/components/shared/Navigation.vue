@@ -51,15 +51,13 @@ export default {
       routesArr: [
         { label: "文字說明", path: "/Description", children: [] },
         { label: "功能展示", path: "/FlowChart", children: [] },
-        {
-          label: "緩存功能",
-          path: "",
-          children: [
-            { label: "基礎說明", path: "/CacheBasic" },
-            { label: "美國職棒2", path: "22" },
-            { label: "美國職棒3", path: "33" },
-          ],
-        },
+        // {
+        //   label: "緩存功能",
+        //   path: "",
+        //   children: [
+        //     { label: "基礎說明", path: "/CacheBasic" },
+        //   ],
+        // },
         {
           label: "LeetCode",
           path: "",
@@ -68,7 +66,6 @@ export default {
             { label: "9_PalindromeNumber", path: "/9_PalindromeNumber" },
             { label: "12_IntegerToRoman", path: "/12_IntegerToRoman" },
             { label: "20_ValidParentheses", path: "/20_ValidParentheses" },
-            { label: "美國職棒3", path: "33" },
           ],
         },
       ],
