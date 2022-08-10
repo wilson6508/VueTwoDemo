@@ -5,12 +5,21 @@
       <div class="card-body" style="height: 650px">
         <ul class="nav nav-tabs">
           <li class="nav-item" v-for="tab in tabArr" :key="tab.value">
-            <span class="nav-link my-tab" :class="{ active: tab.value === chooseTab }" @click="chooseTab = tab.value">
+            <span
+              class="nav-link my-tab"
+              :class="{ active: tab.value === chooseTab }"
+              @click="chooseTab = tab.value"
+            >
               {{ tab.label }}
             </span>
           </li>
         </ul>
-        <div class="mt-4" v-for="(table, key) in infoObj" :key="key" v-show="key === chooseTab">
+        <div
+          class="mt-4"
+          v-for="(table, key) in infoObj"
+          :key="key"
+          v-show="key === chooseTab"
+        >
           <BasicTable :tableInfo="table" />
         </div>
       </div>
@@ -20,6 +29,7 @@
 </template>
 
 <script>
+import axios from "axios";
 import BasicTable from "@/components/BasicTable.vue";
 
 export default {
@@ -98,6 +108,45 @@ export default {
         },
       },
     };
+  },
+  async created() {
+    await this.getResult();
+  },
+  methods: {
+    async getResult() {
+      const apiUrl = "http://127.0.0.1:8087/databaseApi/normal";
+      const postBody = {
+        moduleName: "stock_read_usa_price_log",
+        parameter: "all;all",
+      };
+      const { success, data: { result } } = await this.postApi(apiUrl, postBody);
+      if (success) {
+        console.log(result);
+        // this.info.series = [];
+        // const tempArr = ["AMAT", "QQQM", "SPY", "VTI"];
+        // for (const temp of tempArr) {
+        //   const seriesObj = {
+        //     name: temp,
+        //     data: result
+        //       .filter((item) => item.stockId === temp)
+        //       .map((item) => item.close),
+        //   };
+        //   this.info.series.push(seriesObj);
+        // }
+        // const categories = new Set();
+        // result.forEach((item) => categories.add(item.date));
+        // this.info.xAxis.categories = Array.from(categories);
+        // this.priceKey++;
+      }
+    },
+    postApi(url, params) {
+      return new Promise((resolve) => {
+        axios.post(url, params).then(
+          (response) => resolve({ success: response.data.success, errMsg: "", data: response.data }),
+          (error) => resolve({ success: false, errMsg: error.message, data: null })
+        );
+      });
+    },
   },
 };
 </script>
