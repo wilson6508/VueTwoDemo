@@ -68,6 +68,7 @@ export default {
             { label: "20_ValidParentheses", path: "/20_ValidParentheses" },
           ],
         },
+        { label: "美股資訊", path: "/UsaPrice", children: [] },
       ],
     };
   },

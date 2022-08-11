@@ -37,6 +37,13 @@ const routes = [{
         },
     },
     {
+        path: "/UsaPrice",
+        component: () => import("@/components/stock/UsaPrice.vue"),
+        meta: {
+            title: "美股資訊"
+        },
+    },    
+    {
         path: "/1_TwoSum",
         component: () => import("@/components/leetCode/1_TwoSum.vue"),
         meta: {
