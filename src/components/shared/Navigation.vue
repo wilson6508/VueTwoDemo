@@ -49,8 +49,20 @@ export default {
   data() {
     return {
       routesArr: [
-        { label: "文字說明", path: "/Description", children: [] },
-        { label: "功能展示", path: "/FlowChart", children: [] },
+        { label: "CodeReview", path: "/CodeReview", children: [] },
+        // { label: "文字說明", path: "/Description", children: [] },
+        // { label: "功能展示", path: "/FlowChart", children: [] },
+        // {
+        //   label: "LeetCode",
+        //   path: "",
+        //   children: [
+        //     { label: "1_TwoSum", path: "/1_TwoSum" },
+        //     { label: "9_PalindromeNumber", path: "/9_PalindromeNumber" },
+        //     { label: "12_IntegerToRoman", path: "/12_IntegerToRoman" },
+        //     { label: "20_ValidParentheses", path: "/20_ValidParentheses" },
+        //   ],
+        // },
+        { label: "美股資訊", path: "/UsaPrice", children: [] },
         // {
         //   label: "緩存功能",
         //   path: "",
@@ -58,17 +70,6 @@ export default {
         //     { label: "基礎說明", path: "/CacheBasic" },
         //   ],
         // },
-        {
-          label: "LeetCode",
-          path: "",
-          children: [
-            { label: "1_TwoSum", path: "/1_TwoSum" },
-            { label: "9_PalindromeNumber", path: "/9_PalindromeNumber" },
-            { label: "12_IntegerToRoman", path: "/12_IntegerToRoman" },
-            { label: "20_ValidParentheses", path: "/20_ValidParentheses" },
-          ],
-        },
-        { label: "美股資訊", path: "/UsaPrice", children: [] },
       ],
     };
   },

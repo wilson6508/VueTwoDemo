@@ -6,13 +6,13 @@ Vue.use(VueRouter);
 const routes = [{
         path: "/",
         redirect: {
-            path: "/FlowChart",
+            path: "/UsaPrice",
         },
     },
     {
         path: "*",
         redirect: {
-            path: "/FlowChart",
+            path: "/UsaPrice",
         },
     },
     {
@@ -42,7 +42,14 @@ const routes = [{
         meta: {
             title: "美股資訊"
         },
-    },    
+    },
+    {
+        path: "/CodeReview",
+        component: () => import("@/components/codeReview/CodeReview.vue"),
+        meta: {
+            title: "CodeReview"
+        },
+    },
     {
         path: "/1_TwoSum",
         component: () => import("@/components/leetCode/1_TwoSum.vue"),

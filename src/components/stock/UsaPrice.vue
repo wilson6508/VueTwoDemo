@@ -42,15 +42,16 @@ export default {
     return {
       selectStockId: "SPY",
       stockIdArr: ["AMAT", "QQQM", "SPY", "VTI"],
-      selectMonth: "五月-2022",
-      monthArr: ["四月-2022", "五月-2022", "六月-2022", "七月-2022", "八月-2022"],
+      selectMonth: "2022-05",
+      monthArr: ["2022-04", "2022-05", "2022-06", "2022-07", "2022-08"],
       priceKey: 1,
       volumeKey: 2,
       priceFig: {
         id: "price",
         chart: {
           type: "line",
-          zoomType: "x",
+          // zoomType: "x",
+          marginLeft: 150,
         },
         title: {
           text: "收盤價",
@@ -66,6 +67,8 @@ export default {
         yAxis: {
           title: {
             text: "美元",
+            rotation: 0,
+            align: "high",
           },
         },
         plotOptions: {
@@ -99,18 +102,16 @@ export default {
           },
         },
         xAxis: {
-          categories: ["4", "5", "6", "7", "8"],
+          categories: [],
         },
         yAxis: {
           title: {
-            text: "股",
+            text: "(股)",
+            rotation: 0,
+            // align: "high",
           },
         },
         series: [
-          {
-            name: "玉山銀行",
-            data: [100, 200, 50, 40, 75],
-          },
         ],
       },
     };
