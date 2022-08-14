@@ -30,8 +30,22 @@ const routes = [{
         },
     },
     {
+        path: "/Actuator",
+        component: () => import("@/components/springboot/Actuator.vue"),
+        meta: {
+            title: "Actuator"
+        },
+    },
+    {
+        path: "/Aop",
+        component: () => import("@/components/springboot/Aop.vue"),
+        meta: {
+            title: "Aop"
+        },
+    },
+    {
         path: "/CacheBasic",
-        component: () => import("@/components/cache/CacheBasic.vue"),
+        component: () => import("@/components/springboot/CacheBasic.vue"),
         meta: {
             title: "緩存基礎"
         },
@@ -47,7 +61,7 @@ const routes = [{
         path: "/CodeReview",
         component: () => import("@/components/codeReview/CodeReview.vue"),
         meta: {
-            title: "CodeReview"
+            title: "專案架構"
         },
     },
     {

@@ -49,7 +49,7 @@ export default {
   data() {
     return {
       routesArr: [
-        { label: "CodeReview", path: "/CodeReview", children: [] },
+        { label: "專案架構", path: "/CodeReview", children: [] },
         // { label: "文字說明", path: "/Description", children: [] },
         // { label: "功能展示", path: "/FlowChart", children: [] },
         // {
@@ -63,6 +63,15 @@ export default {
         //   ],
         // },
         { label: "美股資訊", path: "/UsaPrice", children: [] },
+        // {
+        //   label: "SpringBoot",
+        //   path: "",
+        //   children: [
+        //     { label: "Actuator", path: "/Actuator" },
+        //     { label: "Aop", path: "/Aop" },
+        //     { label: "CacheBasic", path: "/CacheBasic" },
+        //   ],
+        // },
         // {
         //   label: "緩存功能",
         //   path: "",
