@@ -51,6 +51,13 @@ const routes = [{
         },
     },
     {
+        path: "/Lombok",
+        component: () => import("@/components/springboot/Lombok.vue"),
+        meta: {
+            title: "Lombok"
+        },
+    },
+    {
         path: "/UsaPrice",
         component: () => import("@/components/stock/UsaPrice.vue"),
         meta: {

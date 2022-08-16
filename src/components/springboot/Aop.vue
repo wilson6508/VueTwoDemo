@@ -14,6 +14,15 @@
         </CodeContainer>
       </div>
       <div class="col-md-8 col-12">
+        <CodeContainer :title="'gradle'" :language="'html'">
+          <template v-slot:sourceCode>
+            <pre>
+compile('org.springframework.boot:spring-boot-starter-aop')
+            </pre>
+          </template>
+        </CodeContainer>
+      </div>
+      <div class="col-md-8 col-12">
         <CodeContainer :title="'controller'" :language="'js'">
           <template v-slot:sourceCode>
             <pre>
