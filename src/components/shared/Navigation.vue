@@ -49,30 +49,30 @@ export default {
   data() {
     return {
       routesArr: [
-        { label: "專案架構", path: "/CodeReview", children: [] },
-        { label: "美股資訊", path: "/UsaPrice", children: [] },
+        // { label: "專案架構", path: "/CodeReview", children: [] },
+        // { label: "美股資訊", path: "/UsaPrice", children: [] },
         // { label: "文字說明", path: "/Description", children: [] },
         // { label: "功能展示", path: "/FlowChart", children: [] },
-        // {
-        //   label: "LeetCode",
-        //   path: "",
-        //   children: [
-        //     { label: "1_TwoSum", path: "/1_TwoSum" },
-        //     { label: "9_PalindromeNumber", path: "/9_PalindromeNumber" },
-        //     { label: "12_IntegerToRoman", path: "/12_IntegerToRoman" },
-        //     { label: "20_ValidParentheses", path: "/20_ValidParentheses" },
-        //   ],
-        // },
-        // {
-        //   label: "SpringBoot",
-        //   path: "",
-        //   children: [
-        //     { label: "Actuator", path: "/Actuator" },
-        //     { label: "Aop", path: "/Aop" },
-        //     { label: "CacheBasic", path: "/CacheBasic" },
-        //     { label: "Lombok", path: "/Lombok" },
-        //   ],
-        // },
+        {
+          label: "LeetCode",
+          path: "",
+          children: [
+            { label: "1_TwoSum", path: "/1_TwoSum" },
+            { label: "9_PalindromeNumber", path: "/9_PalindromeNumber" },
+            { label: "12_IntegerToRoman", path: "/12_IntegerToRoman" },
+            { label: "20_ValidParentheses", path: "/20_ValidParentheses" },
+          ],
+        },
+        {
+          label: "SpringBoot",
+          path: "",
+          children: [
+            { label: "Actuator", path: "/Actuator" },
+            { label: "Aop", path: "/Aop" },
+            { label: "CacheBasic", path: "/CacheBasic" },
+            { label: "Lombok", path: "/Lombok" },
+          ],
+        },
         // {
         //   label: "緩存功能",
         //   path: "",

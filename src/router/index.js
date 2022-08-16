@@ -6,13 +6,13 @@ Vue.use(VueRouter);
 const routes = [{
         path: "/",
         redirect: {
-            path: "/UsaPrice",
+            path: "/Actuator",
         },
     },
     {
         path: "*",
         redirect: {
-            path: "/UsaPrice",
+            path: "/Actuator",
         },
     },
     {
