@@ -65,10 +65,10 @@ const routes = [{
         },
     },
     {
-        path: "/CodeReview",
-        component: () => import("@/components/codeReview/CodeReview.vue"),
+        path: "/Structure",
+        component: () => import("@/components/project/Structure.vue"),
         meta: {
-            title: "專案架構"
+            title: "Structure"
         },
     },
     {
@@ -93,10 +93,31 @@ const routes = [{
         },
     },
     {
+        path: "/17_LetterCombinations",
+        component: () => import("@/components/leetCode/17_LetterCombinations.vue"),
+        meta: {
+            title: "17_LetterCombinations"
+        },
+    },
+    {
         path: "/20_ValidParentheses",
         component: () => import("@/components/leetCode/20_ValidParentheses.vue"),
         meta: {
             title: "20_ValidParentheses"
+        },
+    },
+    {
+        path: "/120_MinimumTotal",
+        component: () => import("@/components/leetCode/120_MinimumTotal.vue"),
+        meta: {
+            title: "120_MinimumTotal"
+        },
+    },
+    {
+        path: "/804_UniqueMorseCode",
+        component: () => import("@/components/leetCode/804_UniqueMorseCode.vue"),
+        meta: {
+            title: "804_UniqueMorseCode"
         },
     },
 ];

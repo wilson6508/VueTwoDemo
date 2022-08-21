@@ -6,6 +6,6 @@
 
 <script>
 export default {
-  name: "CodeReview",
+  name: "Structure",
 };
 </script>
