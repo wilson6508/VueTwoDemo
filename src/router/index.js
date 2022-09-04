@@ -16,6 +16,27 @@ const routes = [{
         },
     },
     {
+        path: "/Java/Generics",
+        component: () => import("@/components/java/Generics.vue"),
+        meta: {
+            title: "Generics"
+        },
+    },
+    {
+        path: "/Java/InnerClass",
+        component: () => import("@/components/java/InnerClass.vue"),
+        meta: {
+            title: "InnerClass"
+        },
+    },
+    {
+        path: "/Java/Lambda",
+        component: () => import("@/components/java/Lambda.vue"),
+        meta: {
+            title: "Lambda"
+        },
+    },
+    {
         path: "/Description",
         component: () => import("@/components/Description.vue"),
         meta: {

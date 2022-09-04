@@ -65,6 +65,15 @@ export default {
           ],
         },
         {
+          label: "Java",
+          path: "",
+          children: [
+            { label: "Generics", path: "/Java/Generics" },
+            { label: "InnerClass", path: "/Java/InnerClass" },
+            { label: "Lambda", path: "/Java/Lambda" },
+          ],
+        },
+        {
           label: "SpringBoot",
           path: "",
           children: [
