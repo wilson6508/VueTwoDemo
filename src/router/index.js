@@ -3,16 +3,66 @@ import VueRouter from 'vue-router'
 
 Vue.use(VueRouter);
 
-const routes = [{
+const routes = [
+    {
         path: "/",
         redirect: {
-            path: "/Actuator",
+            path: "/SpringBoot/Actuator",
         },
     },
     {
         path: "*",
         redirect: {
             path: "/Actuator",
+        },
+    },
+    {
+        path: "/LeetCode/1_TwoSum",
+        component: () => import("@/components/leetCode/1_TwoSum.vue"),
+        meta: {
+            title: "1_TwoSum"
+        },
+    },
+    {
+        path: "/LeetCode/9_PalindromeNumber",
+        component: () => import("@/components/leetCode/9_PalindromeNumber.vue"),
+        meta: {
+            title: "9_PalindromeNumber"
+        },
+    },
+    {
+        path: "/LeetCode/12_IntegerToRoman",
+        component: () => import("@/components/leetCode/12_IntegerToRoman.vue"),
+        meta: {
+            title: "12_IntegerToRoman"
+        },
+    },
+    {
+        path: "/LeetCode/17_LetterCombinations",
+        component: () => import("@/components/leetCode/17_LetterCombinations.vue"),
+        meta: {
+            title: "17_LetterCombinations"
+        },
+    },
+    {
+        path: "/LeetCode/20_ValidParentheses",
+        component: () => import("@/components/leetCode/20_ValidParentheses.vue"),
+        meta: {
+            title: "20_ValidParentheses"
+        },
+    },
+    {
+        path: "/LeetCode/120_MinimumTotal",
+        component: () => import("@/components/leetCode/120_MinimumTotal.vue"),
+        meta: {
+            title: "120_MinimumTotal"
+        },
+    },
+    {
+        path: "/LeetCode/804_UniqueMorseCode",
+        component: () => import("@/components/leetCode/804_UniqueMorseCode.vue"),
+        meta: {
+            title: "804_UniqueMorseCode"
         },
     },
     {
@@ -37,6 +87,41 @@ const routes = [{
         },
     },
     {
+        path: "/Java/Reflection",
+        component: () => import("@/components/java/Reflection.vue"),
+        meta: {
+            title: "Reflection"
+        },
+    },
+    {
+        path: "/SpringBoot/Actuator",
+        component: () => import("@/components/springboot/Actuator.vue"),
+        meta: {
+            title: "Actuator"
+        },
+    },
+    {
+        path: "/SpringBoot/Aop",
+        component: () => import("@/components/springboot/Aop.vue"),
+        meta: {
+            title: "Aop"
+        },
+    },
+    {
+        path: "/SpringBoot/Cache",
+        component: () => import("@/components/springboot/Cache.vue"),
+        meta: {
+            title: "Cache"
+        },
+    },
+    {
+        path: "/SpringBoot/Lombok",
+        component: () => import("@/components/springboot/Lombok.vue"),
+        meta: {
+            title: "Lombok"
+        },
+    },
+    {
         path: "/Description",
         component: () => import("@/components/Description.vue"),
         meta: {
@@ -51,34 +136,6 @@ const routes = [{
         },
     },
     {
-        path: "/Actuator",
-        component: () => import("@/components/springboot/Actuator.vue"),
-        meta: {
-            title: "Actuator"
-        },
-    },
-    {
-        path: "/Aop",
-        component: () => import("@/components/springboot/Aop.vue"),
-        meta: {
-            title: "Aop"
-        },
-    },
-    {
-        path: "/CacheBasic",
-        component: () => import("@/components/springboot/CacheBasic.vue"),
-        meta: {
-            title: "緩存基礎"
-        },
-    },
-    {
-        path: "/Lombok",
-        component: () => import("@/components/springboot/Lombok.vue"),
-        meta: {
-            title: "Lombok"
-        },
-    },
-    {
         path: "/UsaPrice",
         component: () => import("@/components/stock/UsaPrice.vue"),
         meta: {
@@ -90,55 +147,6 @@ const routes = [{
         component: () => import("@/components/project/Structure.vue"),
         meta: {
             title: "Structure"
-        },
-    },
-    {
-        path: "/1_TwoSum",
-        component: () => import("@/components/leetCode/1_TwoSum.vue"),
-        meta: {
-            title: "1_TwoSum"
-        },
-    },
-    {
-        path: "/9_PalindromeNumber",
-        component: () => import("@/components/leetCode/9_PalindromeNumber.vue"),
-        meta: {
-            title: "9_PalindromeNumber"
-        },
-    },
-    {
-        path: "/12_IntegerToRoman",
-        component: () => import("@/components/leetCode/12_IntegerToRoman.vue"),
-        meta: {
-            title: "12_IntegerToRoman"
-        },
-    },
-    {
-        path: "/17_LetterCombinations",
-        component: () => import("@/components/leetCode/17_LetterCombinations.vue"),
-        meta: {
-            title: "17_LetterCombinations"
-        },
-    },
-    {
-        path: "/20_ValidParentheses",
-        component: () => import("@/components/leetCode/20_ValidParentheses.vue"),
-        meta: {
-            title: "20_ValidParentheses"
-        },
-    },
-    {
-        path: "/120_MinimumTotal",
-        component: () => import("@/components/leetCode/120_MinimumTotal.vue"),
-        meta: {
-            title: "120_MinimumTotal"
-        },
-    },
-    {
-        path: "/804_UniqueMorseCode",
-        component: () => import("@/components/leetCode/804_UniqueMorseCode.vue"),
-        meta: {
-            title: "804_UniqueMorseCode"
         },
     },
 ];

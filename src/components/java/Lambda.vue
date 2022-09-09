@@ -5,8 +5,8 @@
         <CodeContainer :title="'Concept'">
           <template v-slot:sourceCode>
             <pre>
-// the compiler will enforce one abstract method (s-a-m)                
-@FunctionalInterface 
+// the compiler will enforce one abstract method (s-a-m)
+@FunctionalInterface
 public interface Printable {
     String print(String suffix);
 }

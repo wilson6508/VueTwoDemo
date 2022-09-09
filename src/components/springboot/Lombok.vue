@@ -17,13 +17,13 @@
         <CodeContainer :title="'gradle'" :language="'html'">
           <template v-slot:sourceCode>
             <pre>
-compile('org.springframework.boot:spring-boot-starter-aop')
+compileOnly 'org.projectlombok:lombok:1.18.24'
             </pre>
           </template>
         </CodeContainer>
       </div>
       <div class="col-md-8 col-12">
-        <CodeContainer :title="''" :language="'js'">
+        <CodeContainer :title="'example'" :language="'js'">
           <template v-slot:sourceCode>
             <pre>
 import lombok.AllArgsConstructor;
@@ -68,7 +68,7 @@ https://blog.csdn.net/zhanlanmg/article/details/50392266
 <script>
 import CodeContainer from "@/components/shared/CodeContainer.vue";
 export default {
-  name: "Aop",
+  name: "Lombok",
   components: {
     CodeContainer,
   },
