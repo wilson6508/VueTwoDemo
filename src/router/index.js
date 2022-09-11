@@ -122,6 +122,13 @@ const routes = [
         },
     },
     {
+        path: "/SpringBoot/RequestTag",
+        component: () => import("@/components/springboot/RequestTag.vue"),
+        meta: {
+            title: "RequestTag"
+        },
+    },
+    {
         path: "/Description",
         component: () => import("@/components/Description.vue"),
         meta: {

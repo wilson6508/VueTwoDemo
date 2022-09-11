@@ -82,6 +82,7 @@ export default {
             { label: "Aop", path: "/SpringBoot/Aop" },
             { label: "Cache", path: "/SpringBoot/Cache" },
             { label: "Lombok", path: "/SpringBoot/Lombok" },
+            { label: "RequestTag", path: "/SpringBoot/RequestTag" },
           ],
         },
         { label: "Structure", path: "/Structure", children: [] },
