@@ -89,7 +89,7 @@ public class Example {
             }
             if (method.getName().equals("privateStaticMethod")) {
                 method.setAccessible(true);
-                method.invoke(person);
+                method.invoke(null);
             }
         }
 

@@ -56,7 +56,7 @@ export default {
           path: "",
           children: [
             { label: "1_TwoSum", path: "/LeetCode/1_TwoSum" },
-            { label: "9_PalindromeNumber", path: "//LeetCode9_PalindromeNumber" },
+            { label: "9_PalindromeNumber", path: "/LeetCode/9_PalindromeNumber" },
             { label: "12_IntegerToRoman", path: "/LeetCode/12_IntegerToRoman" },
             { label: "17_LetterCombinations", path: "/LeetCode/17_LetterCombinations" },
             { label: "20_ValidParentheses", path: "/LeetCode/20_ValidParentheses" },
