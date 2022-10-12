@@ -18,6 +18,9 @@
           <template v-slot:sourceCode>
             <pre>
 compileOnly 'org.projectlombok:lombok:1.18.24'
+<hr/>
+implementation 'org.projectlombok:lombok'
+annotationProcessor 'org.projectlombok:lombok'
             </pre>
           </template>
         </CodeContainer>
@@ -57,7 +60,7 @@ Customer customer = Customer.builder().name("Tom").age(18).build();
 lombok @EqualsAndHashCode
 https://blog.csdn.net/zhanlanmg/article/details/50392266
         </pre
-            >
+        >
           </template>
         </CodeContainer>
       </div>
@@ -67,6 +70,7 @@ https://blog.csdn.net/zhanlanmg/article/details/50392266
 
 <script>
 import CodeContainer from "@/components/shared/CodeContainer.vue";
+
 export default {
   name: "Lombok",
   components: {

@@ -81,8 +81,17 @@ export default {
             { label: "Actuator", path: "/SpringBoot/Actuator" },
             { label: "Aop", path: "/SpringBoot/Aop" },
             { label: "Cache", path: "/SpringBoot/Cache" },
+            { label: "EhCache", path: "/SpringBoot/EhCache" },
             { label: "Lombok", path: "/SpringBoot/Lombok" },
             { label: "RequestTag", path: "/SpringBoot/RequestTag" },
+            { label: "SimpleCache", path: "/SpringBoot/SimpleCache" },
+          ],
+        },
+        {
+          label: "Application",
+          path: "",
+          children: [
+            { label: "GoogleSheet", path: "/Application/GoogleSheet" },
           ],
         },
         { label: "Structure", path: "/Structure", children: [] },

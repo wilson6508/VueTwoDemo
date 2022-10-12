@@ -115,6 +115,13 @@ const routes = [
         },
     },
     {
+        path: "/SpringBoot/EhCache",
+        component: () => import("@/components/springboot/EhCache.vue"),
+        meta: {
+            title: "EhCache"
+        },
+    },
+    {
         path: "/SpringBoot/Lombok",
         component: () => import("@/components/springboot/Lombok.vue"),
         meta: {
@@ -126,6 +133,20 @@ const routes = [
         component: () => import("@/components/springboot/RequestTag.vue"),
         meta: {
             title: "RequestTag"
+        },
+    },
+    {
+        path: "/SpringBoot/SimpleCache",
+        component: () => import("@/components/springboot/SimpleCache.vue"),
+        meta: {
+            title: "SimpleCache"
+        },
+    },
+    {
+        path: "/Application/GoogleSheet",
+        component: () => import("@/components/application/GoogleSheet.vue"),
+        meta: {
+            title: "GoogleSheet"
         },
     },
     {
