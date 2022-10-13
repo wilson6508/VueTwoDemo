@@ -51,6 +51,8 @@ export default {
       routesArr: [
         // { label: "文字說明", path: "/Description", children: [] },
         // { label: "功能展示", path: "/FlowChart", children: [] },
+        // { label: "Structure", path: "/Structure", children: [] },
+        // { label: "UsaStock", path: "/UsaPrice", children: [] },
         {
           label: "LeetCode",
           path: "",
@@ -85,17 +87,23 @@ export default {
             { label: "Lombok", path: "/SpringBoot/Lombok" },
             { label: "RequestTag", path: "/SpringBoot/RequestTag" },
             { label: "SimpleCache", path: "/SpringBoot/SimpleCache" },
+            { label: "UnitTesting", path: "/SpringBoot/UnitTesting" },
           ],
         },
         {
-          label: "Application",
+          label: "Linux",
           path: "",
           children: [
-            { label: "GoogleSheet", path: "/Application/GoogleSheet" },
+            { label: "FileCRUD", path: "/Linux/FileCRUD" },
           ],
         },
-        { label: "Structure", path: "/Structure", children: [] },
-        { label: "UsaStock", path: "/UsaPrice", children: [] },
+        {
+          label: "Other",
+          path: "",
+          children: [
+            { label: "GoogleSheet", path: "/Other/GoogleSheet" },
+          ],
+        },
       ],
     };
   },

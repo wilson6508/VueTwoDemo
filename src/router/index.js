@@ -13,7 +13,7 @@ const routes = [
     {
         path: "*",
         redirect: {
-            path: "/Actuator",
+            path: "/SpringBoot/Actuator",
         },
     },
     {
@@ -143,8 +143,22 @@ const routes = [
         },
     },
     {
-        path: "/Application/GoogleSheet",
-        component: () => import("@/components/application/GoogleSheet.vue"),
+        path: "/SpringBoot/UnitTesting",
+        component: () => import("@/components/springboot/UnitTesting.vue"),
+        meta: {
+            title: "UnitTesting"
+        },
+    },
+    {
+        path: "/Linux/FileCRUD",
+        component: () => import("@/components/linux/FileCRUD.vue"),
+        meta: {
+            title: "FileCRUD"
+        },
+    },
+    {
+        path: "/Other/GoogleSheet",
+        component: () => import("@/components/other/GoogleSheet.vue"),
         meta: {
             title: "GoogleSheet"
         },
