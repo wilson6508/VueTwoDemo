@@ -5,36 +5,27 @@
         <CodeContainer :title="''">
           <template v-slot:sourceCode>
             <pre>
-建立
-mkdir dirName
-vim fileName
-touch /home/fileName
+查看進程
+top
+ps aux | less
+ps aux | grep xxx
 
-讀取
-cat fileName
-more fileName
-less fileName
+查看父子進程關係
+ps -ef | less
+ps -ef | grep xxx
 
-刪除
-rmdir dirName
-rm -r dirName/
-rm fileName
+刪除進程
+kill PID
+強制停止進程
+kill -9 PID
 
-複製
-cp -r dirName/ /home/
-cp fileName /home/
+查看進程網路資訊
+netstat -anp
+netstat -anp | less
+netstat -anp | grep PID
 
-移動
-mv fileName /home/
-
-更名
-mv oldFileName newFileName
-
-查找
-find /root -name fileName
-find /root -name "*.cfg"
-find /root -user userName
-find /root -size +2M
+查看網路端口號占用情況
+netstat -nlp | grep port號
             </pre>
           </template>
         </CodeContainer>
@@ -46,7 +37,7 @@ find /root -size +2M
 <script>
 import CodeContainer from "@/components/shared/CodeContainer.vue";
 export default {
-  name: "FileCRUD",
+  name: "Process",
   components: {
     CodeContainer,
   },

@@ -150,10 +150,17 @@ const routes = [
         },
     },
     {
-        path: "/Linux/FileCRUD",
-        component: () => import("@/components/linux/FileCRUD.vue"),
+        path: "/Linux/File",
+        component: () => import("@/components/linux/File.vue"),
         meta: {
-            title: "FileCRUD"
+            title: "File"
+        },
+    },
+    {
+        path: "/Linux/Process",
+        component: () => import("@/components/linux/Process.vue"),
+        meta: {
+            title: "Process"
         },
     },
     {

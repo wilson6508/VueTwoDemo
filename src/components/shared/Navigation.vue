@@ -94,7 +94,8 @@ export default {
           label: "Linux",
           path: "",
           children: [
-            { label: "FileCRUD", path: "/Linux/FileCRUD" },
+            { label: "File", path: "/Linux/File" },
+            { label: "Process", path: "/Linux/Process" },
           ],
         },
         {
