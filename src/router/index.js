@@ -129,10 +129,24 @@ const routes = [
         },
     },
     {
+        path: "/SpringBoot/Profile",
+        component: () => import("@/components/springboot/Profile.vue"),
+        meta: {
+            title: "Profile"
+        },
+    },
+    {
         path: "/SpringBoot/RequestTag",
         component: () => import("@/components/springboot/RequestTag.vue"),
         meta: {
             title: "RequestTag"
+        },
+    },
+    {
+        path: "/SpringBoot/Retry",
+        component: () => import("@/components/springboot/Retry.vue"),
+        meta: {
+            title: "Retry"
         },
     },
     {
