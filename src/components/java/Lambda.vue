@@ -23,11 +23,11 @@ Integer integer = supplier.get();
       <CodeContainer :title="'Two Parameter'">
         <template v-slot:sourceCode>
           <pre>
-BiConsumer&lt;Person, byte[]&gt; biConsumer = (person, arr) -> {
+BiConsumer&lt;Person, int[]&gt; biConsumer = (person, arr) -> {
     person.setHeight(arr[0]);
     person.setWeight(arr[1]);
 };
-biConsumer.accept(person, new byte[]{200, 100});
+biConsumer.accept(person, new int[]{200, 100});
           </pre>
         </template>
       </CodeContainer>
