@@ -23,6 +23,7 @@ rm fileName
 複製
 cp -r dirName/ /home/
 cp fileName /home/
+cp 123.txt 456.txt
 
 移動
 mv fileName /home/

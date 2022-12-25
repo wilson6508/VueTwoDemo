@@ -72,7 +72,7 @@ spring.output.ansi.enabled=ALWAYS
           <template v-slot:sourceCode>
             <pre>
 timeOut=1200
-databaseApi=https://release-test2.opview.com.tw/eduApi/login
+databaseApi=http://127.0.0.1:8087/databaseApi/normal
 
 spring.datasource.url=jdbc:mysql://localhost:3306/stock_dev
 spring.datasource.username=root
