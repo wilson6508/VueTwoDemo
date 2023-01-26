@@ -107,6 +107,17 @@ export default {
             { label: "GoogleSheet", path: "/Other/GoogleSheet" },
           ],
         },
+        {
+          label: "面試經驗",
+          path: "",
+          children: [
+            { label: "Fpc", path: "/Interview/Fpc" },
+            { label: "Pegatron", path: "/Interview/Pegatron" },
+            { label: "Intelligent", path: "/Interview/Intelligent" },
+            { label: "OneZeroFour", path: "/Interview/OneZeroFour" },
+            { label: "Platinum", path: "/Interview/Platinum" },
+          ],
+        },
       ],
     };
   },

@@ -185,6 +185,41 @@ const routes = [
         },
     },
     {
+        path: "/Interview/Fpc",
+        component: () => import("@/components/interview/Fpc.vue"),
+        meta: {
+            title: "Fpc"
+        },
+    },
+    {
+        path: "/Interview/Pegatron",
+        component: () => import("@/components/interview/Pegatron.vue"),
+        meta: {
+            title: "Pegatron"
+        },
+    },
+    {
+        path: "/Interview/Intelligent",
+        component: () => import("@/components/interview/Intelligent.vue"),
+        meta: {
+            title: "Intelligent"
+        },
+    },
+    {
+        path: "/Interview/OneZeroFour",
+        component: () => import("@/components/interview/OneZeroFour.vue"),
+        meta: {
+            title: "OneZeroFour"
+        },
+    },
+    {
+        path: "/Interview/Platinum",
+        component: () => import("@/components/interview/Platinum.vue"),
+        meta: {
+            title: "Platinum"
+        },
+    },
+    {
         path: "/Description",
         component: () => import("@/components/Description.vue"),
         meta: {
