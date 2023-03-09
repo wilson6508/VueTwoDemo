@@ -53,6 +53,17 @@ export default {
         // { label: "功能展示", path: "/FlowChart", children: [] },
         // { label: "Structure", path: "/Structure", children: [] },
         // { label: "UsaStock", path: "/UsaPrice", children: [] },
+        // {
+        //   label: "面試經驗",
+        //   path: "",
+        //   children: [
+        //     { label: "Fpc", path: "/Interview/Fpc" },
+        //     { label: "Pegatron", path: "/Interview/Pegatron" },
+        //     { label: "Intelligent", path: "/Interview/Intelligent" },
+        //     { label: "OneZeroFour", path: "/Interview/OneZeroFour" },
+        //     { label: "Platinum", path: "/Interview/Platinum" },
+        //   ],
+        // },
         {
           label: "LeetCode",
           path: "",
@@ -98,6 +109,7 @@ export default {
           children: [
             { label: "File", path: "/Linux/File" },
             { label: "Process", path: "/Linux/Process" },
+            { label: "ControlFlow", path: "/Linux/ControlFlow" },
           ],
         },
         {
@@ -108,14 +120,10 @@ export default {
           ],
         },
         {
-          label: "面試經驗",
+          label: "Redis",
           path: "",
           children: [
-            { label: "Fpc", path: "/Interview/Fpc" },
-            { label: "Pegatron", path: "/Interview/Pegatron" },
-            { label: "Intelligent", path: "/Interview/Intelligent" },
-            { label: "OneZeroFour", path: "/Interview/OneZeroFour" },
-            { label: "Platinum", path: "/Interview/Platinum" },
+            { label: "Streams", path: "/Redis/Streams" },
           ],
         },
       ],

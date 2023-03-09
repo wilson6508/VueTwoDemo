@@ -178,6 +178,13 @@ const routes = [
         },
     },
     {
+        path: "/Linux/ControlFlow",
+        component: () => import("@/components/linux/ControlFlow.vue"),
+        meta: {
+            title: "ControlFlow"
+        },
+    },
+    {
         path: "/Other/GoogleSheet",
         component: () => import("@/components/other/GoogleSheet.vue"),
         meta: {
@@ -217,6 +224,13 @@ const routes = [
         component: () => import("@/components/interview/Platinum.vue"),
         meta: {
             title: "Platinum"
+        },
+    },
+    {
+        path: "/Redis/Streams",
+        component: () => import("@/components/redis/Streams.vue"),
+        meta: {
+            title: "Streams"
         },
     },
     {
