@@ -76,6 +76,23 @@ echo $sum
           </template>
         </CodeContainer>
       </div>
+      <div class="col-md-8 col-12">
+        <CodeContainer :title="'while'">
+          <template v-slot:sourceCode>
+            <pre>
+a=1
+while [ $a -le $1 ]
+do
+#    sum=$[$sum+$a]
+#    a=$[$a+1]
+    let sum+=a
+    let a++
+done
+echo $sum
+            </pre>
+          </template>
+        </CodeContainer>
+      </div>
     </div>
   </div>
 </template>

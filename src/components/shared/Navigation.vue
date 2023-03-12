@@ -51,7 +51,6 @@ export default {
       routesArr: [
         // { label: "文字說明", path: "/Description", children: [] },
         // { label: "功能展示", path: "/FlowChart", children: [] },
-        // { label: "Structure", path: "/Structure", children: [] },
         // { label: "UsaStock", path: "/UsaPrice", children: [] },
         // {
         //   label: "面試經驗",
@@ -64,19 +63,20 @@ export default {
         //     { label: "Platinum", path: "/Interview/Platinum" },
         //   ],
         // },
-        {
-          label: "LeetCode",
-          path: "",
-          children: [
-            { label: "1_TwoSum", path: "/LeetCode/1_TwoSum" },
-            { label: "9_PalindromeNumber", path: "/LeetCode/9_PalindromeNumber" },
-            { label: "12_IntegerToRoman", path: "/LeetCode/12_IntegerToRoman" },
-            { label: "17_LetterCombinations", path: "/LeetCode/17_LetterCombinations" },
-            { label: "20_ValidParentheses", path: "/LeetCode/20_ValidParentheses" },
-            { label: "120_MinimumTotal", path: "/LeetCode/120_MinimumTotal" },
-            { label: "804_UniqueMorseCode", path: "/LeetCode/804_UniqueMorseCode" },
-          ],
-        },
+        // {
+        //   label: "LeetCode",
+        //   path: "",
+        //   children: [
+        //     { label: "1_TwoSum", path: "/LeetCode/1_TwoSum" },
+        //     { label: "9_PalindromeNumber", path: "/LeetCode/9_PalindromeNumber" },
+        //     { label: "12_IntegerToRoman", path: "/LeetCode/12_IntegerToRoman" },
+        //     { label: "17_LetterCombinations", path: "/LeetCode/17_LetterCombinations" },
+        //     { label: "20_ValidParentheses", path: "/LeetCode/20_ValidParentheses" },
+        //     { label: "120_MinimumTotal", path: "/LeetCode/120_MinimumTotal" },
+        //     { label: "804_UniqueMorseCode", path: "/LeetCode/804_UniqueMorseCode" },
+        //   ],
+        // },
+        // { label: "Structure", path: "/Structure", children: [] },
         {
           label: "Java",
           path: "",
@@ -95,6 +95,7 @@ export default {
             { label: "Aop", path: "/SpringBoot/Aop" },
             { label: "Cache", path: "/SpringBoot/Cache" },
             { label: "EhCache", path: "/SpringBoot/EhCache" },
+            { label: "GoogleSheet", path: "/SpringBoot/GoogleSheet" },
             { label: "Lombok", path: "/SpringBoot/Lombok" },
             { label: "Profile", path: "/SpringBoot/Profile" },
             { label: "RequestTag", path: "/SpringBoot/RequestTag" },
@@ -107,16 +108,11 @@ export default {
           label: "Linux",
           path: "",
           children: [
+            { label: "Archive", path: "/Linux/Archive" },
+            { label: "Awk", path: "/Linux/Awk" },
+            { label: "ControlFlow", path: "/Linux/ControlFlow" },
             { label: "File", path: "/Linux/File" },
             { label: "Process", path: "/Linux/Process" },
-            { label: "ControlFlow", path: "/Linux/ControlFlow" },
-          ],
-        },
-        {
-          label: "Other",
-          path: "",
-          children: [
-            { label: "GoogleSheet", path: "/Other/GoogleSheet" },
           ],
         },
         {
@@ -124,6 +120,7 @@ export default {
           path: "",
           children: [
             { label: "Streams", path: "/Redis/Streams" },
+            { label: "LogicalExpire", path: "/Redis/LogicalExpire" },
           ],
         },
       ],

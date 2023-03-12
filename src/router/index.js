@@ -16,55 +16,15 @@ const routes = [
             path: "/SpringBoot/Actuator",
         },
     },
+    // Structure
     {
-        path: "/LeetCode/1_TwoSum",
-        component: () => import("@/components/leetCode/1_TwoSum.vue"),
+        path: "/Structure",
+        component: () => import("@/components/project/Structure.vue"),
         meta: {
-            title: "1_TwoSum"
+            title: "Structure"
         },
     },
-    {
-        path: "/LeetCode/9_PalindromeNumber",
-        component: () => import("@/components/leetCode/9_PalindromeNumber.vue"),
-        meta: {
-            title: "9_PalindromeNumber"
-        },
-    },
-    {
-        path: "/LeetCode/12_IntegerToRoman",
-        component: () => import("@/components/leetCode/12_IntegerToRoman.vue"),
-        meta: {
-            title: "12_IntegerToRoman"
-        },
-    },
-    {
-        path: "/LeetCode/17_LetterCombinations",
-        component: () => import("@/components/leetCode/17_LetterCombinations.vue"),
-        meta: {
-            title: "17_LetterCombinations"
-        },
-    },
-    {
-        path: "/LeetCode/20_ValidParentheses",
-        component: () => import("@/components/leetCode/20_ValidParentheses.vue"),
-        meta: {
-            title: "20_ValidParentheses"
-        },
-    },
-    {
-        path: "/LeetCode/120_MinimumTotal",
-        component: () => import("@/components/leetCode/120_MinimumTotal.vue"),
-        meta: {
-            title: "120_MinimumTotal"
-        },
-    },
-    {
-        path: "/LeetCode/804_UniqueMorseCode",
-        component: () => import("@/components/leetCode/804_UniqueMorseCode.vue"),
-        meta: {
-            title: "804_UniqueMorseCode"
-        },
-    },
+    // Java
     {
         path: "/Java/Generics",
         component: () => import("@/components/java/Generics.vue"),
@@ -93,6 +53,7 @@ const routes = [
             title: "Reflection"
         },
     },
+    // SpringBoot
     {
         path: "/SpringBoot/Actuator",
         component: () => import("@/components/springboot/Actuator.vue"),
@@ -119,6 +80,13 @@ const routes = [
         component: () => import("@/components/springboot/EhCache.vue"),
         meta: {
             title: "EhCache"
+        },
+    },
+    {
+        path: "/SpringBoot/GoogleSheet",
+        component: () => import("@/components/springboot/GoogleSheet.vue"),
+        meta: {
+            title: "GoogleSheet"
         },
     },
     {
@@ -163,6 +131,28 @@ const routes = [
             title: "UnitTesting"
         },
     },
+    // Linux
+    {
+        path: "/Linux/Archive",
+        component: () => import("@/components/linux/Archive.vue"),
+        meta: {
+            title: "Archive"
+        },
+    },
+    {
+        path: "/Linux/Awk",
+        component: () => import("@/components/linux/Awk.vue"),
+        meta: {
+            title: "Awk"
+        },
+    },
+    {
+        path: "/Linux/ControlFlow",
+        component: () => import("@/components/linux/ControlFlow.vue"),
+        meta: {
+            title: "ControlFlow"
+        },
+    },
     {
         path: "/Linux/File",
         component: () => import("@/components/linux/File.vue"),
@@ -177,55 +167,7 @@ const routes = [
             title: "Process"
         },
     },
-    {
-        path: "/Linux/ControlFlow",
-        component: () => import("@/components/linux/ControlFlow.vue"),
-        meta: {
-            title: "ControlFlow"
-        },
-    },
-    {
-        path: "/Other/GoogleSheet",
-        component: () => import("@/components/other/GoogleSheet.vue"),
-        meta: {
-            title: "GoogleSheet"
-        },
-    },
-    {
-        path: "/Interview/Fpc",
-        component: () => import("@/components/interview/Fpc.vue"),
-        meta: {
-            title: "Fpc"
-        },
-    },
-    {
-        path: "/Interview/Pegatron",
-        component: () => import("@/components/interview/Pegatron.vue"),
-        meta: {
-            title: "Pegatron"
-        },
-    },
-    {
-        path: "/Interview/Intelligent",
-        component: () => import("@/components/interview/Intelligent.vue"),
-        meta: {
-            title: "Intelligent"
-        },
-    },
-    {
-        path: "/Interview/OneZeroFour",
-        component: () => import("@/components/interview/OneZeroFour.vue"),
-        meta: {
-            title: "OneZeroFour"
-        },
-    },
-    {
-        path: "/Interview/Platinum",
-        component: () => import("@/components/interview/Platinum.vue"),
-        meta: {
-            title: "Platinum"
-        },
-    },
+    // Redis
     {
         path: "/Redis/Streams",
         component: () => import("@/components/redis/Streams.vue"),
@@ -234,33 +176,118 @@ const routes = [
         },
     },
     {
-        path: "/Description",
-        component: () => import("@/components/Description.vue"),
+        path: "/Redis/LogicalExpire",
+        component: () => import("@/components/redis/LogicalExpire.vue"),
         meta: {
-            title: "文字說明"
+            title: "LogicalExpire"
         },
     },
-    {
-        path: "/FlowChart",
-        component: () => import("@/components/FlowChart.vue"),
-        meta: {
-            title: "功能展示"
-        },
-    },
-    {
-        path: "/UsaPrice",
-        component: () => import("@/components/stock/UsaPrice.vue"),
-        meta: {
-            title: "美股資訊"
-        },
-    },
-    {
-        path: "/Structure",
-        component: () => import("@/components/project/Structure.vue"),
-        meta: {
-            title: "Structure"
-        },
-    },
+    // Other
+    // {
+    //     path: "/LeetCode/1_TwoSum",
+    //     component: () => import("@/components/leetCode/1_TwoSum.vue"),
+    //     meta: {
+    //         title: "1_TwoSum"
+    //     },
+    // },
+    // {
+    //     path: "/LeetCode/9_PalindromeNumber",
+    //     component: () => import("@/components/leetCode/9_PalindromeNumber.vue"),
+    //     meta: {
+    //         title: "9_PalindromeNumber"
+    //     },
+    // },
+    // {
+    //     path: "/LeetCode/12_IntegerToRoman",
+    //     component: () => import("@/components/leetCode/12_IntegerToRoman.vue"),
+    //     meta: {
+    //         title: "12_IntegerToRoman"
+    //     },
+    // },
+    // {
+    //     path: "/LeetCode/17_LetterCombinations",
+    //     component: () => import("@/components/leetCode/17_LetterCombinations.vue"),
+    //     meta: {
+    //         title: "17_LetterCombinations"
+    //     },
+    // },
+    // {
+    //     path: "/LeetCode/20_ValidParentheses",
+    //     component: () => import("@/components/leetCode/20_ValidParentheses.vue"),
+    //     meta: {
+    //         title: "20_ValidParentheses"
+    //     },
+    // },
+    // {
+    //     path: "/LeetCode/120_MinimumTotal",
+    //     component: () => import("@/components/leetCode/120_MinimumTotal.vue"),
+    //     meta: {
+    //         title: "120_MinimumTotal"
+    //     },
+    // },
+    // {
+    //     path: "/LeetCode/804_UniqueMorseCode",
+    //     component: () => import("@/components/leetCode/804_UniqueMorseCode.vue"),
+    //     meta: {
+    //         title: "804_UniqueMorseCode"
+    //     },
+    // },
+    // {
+    //     path: "/Interview/Fpc",
+    //     component: () => import("@/components/interview/Fpc.vue"),
+    //     meta: {
+    //         title: "Fpc"
+    //     },
+    // },
+    // {
+    //     path: "/Interview/Pegatron",
+    //     component: () => import("@/components/interview/Pegatron.vue"),
+    //     meta: {
+    //         title: "Pegatron"
+    //     },
+    // },
+    // {
+    //     path: "/Interview/Intelligent",
+    //     component: () => import("@/components/interview/Intelligent.vue"),
+    //     meta: {
+    //         title: "Intelligent"
+    //     },
+    // },
+    // {
+    //     path: "/Interview/OneZeroFour",
+    //     component: () => import("@/components/interview/OneZeroFour.vue"),
+    //     meta: {
+    //         title: "OneZeroFour"
+    //     },
+    // },
+    // {
+    //     path: "/Interview/Platinum",
+    //     component: () => import("@/components/interview/Platinum.vue"),
+    //     meta: {
+    //         title: "Platinum"
+    //     },
+    // },
+    // {
+    //     path: "/Description",
+    //     component: () => import("@/components/Description.vue"),
+    //     meta: {
+    //         title: "文字說明"
+    //     },
+    // },
+    // {
+    //     path: "/FlowChart",
+    //     component: () => import("@/components/FlowChart.vue"),
+    //     meta: {
+    //         title: "功能展示"
+    //     },
+    // },
+    // {
+    //     path: "/UsaPrice",
+    //     component: () => import("@/components/stock/UsaPrice.vue"),
+    //     meta: {
+    //         title: "美股資訊"
+    //     },
+    // },
 ];
 
 const router = new VueRouter({
