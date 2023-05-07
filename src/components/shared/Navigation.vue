@@ -111,6 +111,7 @@ export default {
             { label: "Archive", path: "/Linux/Archive" },
             { label: "Awk", path: "/Linux/Awk" },
             { label: "ControlFlow", path: "/Linux/ControlFlow" },
+            { label: "DeleteLog", path: "/Linux/DeleteLog" },
             { label: "File", path: "/Linux/File" },
             { label: "Process", path: "/Linux/Process" },
           ],
@@ -119,8 +120,10 @@ export default {
           label: "Redis",
           path: "",
           children: [
-            { label: "Streams", path: "/Redis/Streams" },
+            { label: "Lock", path: "/Redis/Lock" },
             { label: "LogicalExpire", path: "/Redis/LogicalExpire" },
+            { label: "Mutex", path: "/Redis/Mutex" },
+            { label: "Streams", path: "/Redis/Streams" }
           ],
         },
       ],

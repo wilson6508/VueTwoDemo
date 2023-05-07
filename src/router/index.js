@@ -154,6 +154,13 @@ const routes = [
         },
     },
     {
+        path: "/Linux/DeleteLog",
+        component: () => import("@/components/linux/DeleteLog.vue"),
+        meta: {
+            title: "DeleteLog"
+        },
+    },
+    {
         path: "/Linux/File",
         component: () => import("@/components/linux/File.vue"),
         meta: {
@@ -169,10 +176,10 @@ const routes = [
     },
     // Redis
     {
-        path: "/Redis/Streams",
-        component: () => import("@/components/redis/Streams.vue"),
+        path: "/Redis/Lock",
+        component: () => import("@/components/redis/Lock.vue"),
         meta: {
-            title: "Streams"
+            title: "Lock"
         },
     },
     {
@@ -180,6 +187,20 @@ const routes = [
         component: () => import("@/components/redis/LogicalExpire.vue"),
         meta: {
             title: "LogicalExpire"
+        },
+    },
+    {
+        path: "/Redis/Mutex",
+        component: () => import("@/components/redis/Mutex.vue"),
+        meta: {
+            title: "Mutex"
+        },
+    },
+    {
+        path: "/Redis/Streams",
+        component: () => import("@/components/redis/Streams.vue"),
+        meta: {
+            title: "Streams"
         },
     },
     // Other

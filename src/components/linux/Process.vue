@@ -26,6 +26,13 @@ netstat -anp | grep PID
 
 查看網路端口號占用情況
 netstat -nlp | grep port號
+sudo lsof -i :port號
+
+firewall-cmd --zone=public --add-port=5501/tcp --permanent
+iptables -L -n
+
+firewall-cmd --zone=public --remove-port=5501/tcp --permanent
+firewall-cmd --reload
             </pre>
           </template>
         </CodeContainer>
