@@ -78,6 +78,17 @@ export default {
         // },
         // { label: "Structure", path: "/Structure", children: [] },
         {
+          label: "Docker",
+          path: "",
+          children: [
+            { label: "Compose", path: "/Docker/Compose" },
+            { label: "Container", path: "/Docker/Container" },
+            { label: "Images", path: "/Docker/Images" },
+            { label: "Network", path: "/Docker/Network" },
+            { label: "Volume", path: "/Docker/Volume" },
+          ],
+        },
+        {
           label: "Java",
           path: "",
           children: [
@@ -117,13 +128,26 @@ export default {
           ],
         },
         {
+          label: "MySQL",
+          path: "",
+          children: [
+            { label: "DDL", path: "/MySQL/DDL" },
+            { label: "DQL", path: "/MySQL/DQL" },
+          ],
+        },
+        {
           label: "Redis",
           path: "",
           children: [
+            { label: "Hash", path: "/Redis/Hash" },
             { label: "Lock", path: "/Redis/Lock" },
             { label: "LogicalExpire", path: "/Redis/LogicalExpire" },
+            { label: "Lua", path: "/Redis/Lua" },
             { label: "Mutex", path: "/Redis/Mutex" },
-            { label: "Streams", path: "/Redis/Streams" }
+            { label: "Set", path: "/Redis/Set" },
+            { label: "SortedSet", path: "/Redis/SortedSet" },
+            { label: "Streams", path: "/Redis/Streams" },
+            { label: "String", path: "/Redis/String" }
           ],
         },
       ],

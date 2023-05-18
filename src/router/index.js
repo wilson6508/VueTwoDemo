@@ -24,6 +24,42 @@ const routes = [
             title: "Structure"
         },
     },
+    // Docker
+    {
+        path: "/Docker/Compose",
+        component: () => import("@/components/docker/Compose.vue"),
+        meta: {
+            title: "Compose"
+        },
+    },
+    {
+        path: "/Docker/Container",
+        component: () => import("@/components/docker/Container.vue"),
+        meta: {
+            title: "Container"
+        },
+    },
+    {
+        path: "/Docker/Images",
+        component: () => import("@/components/docker/Images.vue"),
+        meta: {
+            title: "Images"
+        },
+    },
+    {
+        path: "/Docker/Network",
+        component: () => import("@/components/docker/Network.vue"),
+        meta: {
+            title: "Network"
+        },
+    },
+    {
+        path: "/Docker/Volume",
+        component: () => import("@/components/docker/Volume.vue"),
+        meta: {
+            title: "Volume"
+        },
+    },
     // Java
     {
         path: "/Java/Generics",
@@ -174,7 +210,29 @@ const routes = [
             title: "Process"
         },
     },
+    // MySQL
+    {
+        path: "/MySQL/DDL",
+        component: () => import("@/components/mysql/DDL.vue"),
+        meta: {
+            title: "DDL"
+        },
+    },
+    {
+        path: "/MySQL/DQL",
+        component: () => import("@/components/mysql/DQL.vue"),
+        meta: {
+            title: "DQL"
+        },
+    },
     // Redis
+    {
+        path: "/Redis/Hash",
+        component: () => import("@/components/redis/Hash.vue"),
+        meta: {
+            title: "Hash"
+        },
+    },
     {
         path: "/Redis/Lock",
         component: () => import("@/components/redis/Lock.vue"),
@@ -190,6 +248,13 @@ const routes = [
         },
     },
     {
+        path: "/Redis/Lua",
+        component: () => import("@/components/redis/Lua.vue"),
+        meta: {
+            title: "Lua"
+        },
+    },
+    {
         path: "/Redis/Mutex",
         component: () => import("@/components/redis/Mutex.vue"),
         meta: {
@@ -197,10 +262,31 @@ const routes = [
         },
     },
     {
+        path: "/Redis/Set",
+        component: () => import("@/components/redis/Set.vue"),
+        meta: {
+            title: "Set"
+        },
+    },
+    {
+        path: "/Redis/SortedSet",
+        component: () => import("@/components/redis/SortedSet.vue"),
+        meta: {
+            title: "SortedSet"
+        },
+    },
+    {
         path: "/Redis/Streams",
         component: () => import("@/components/redis/Streams.vue"),
         meta: {
             title: "Streams"
+        },
+    },
+    {
+        path: "/Redis/String",
+        component: () => import("@/components/redis/String.vue"),
+        meta: {
+            title: "String"
         },
     },
     // Other
@@ -300,13 +386,6 @@ const routes = [
     //     component: () => import("@/components/FlowChart.vue"),
     //     meta: {
     //         title: "功能展示"
-    //     },
-    // },
-    // {
-    //     path: "/UsaPrice",
-    //     component: () => import("@/components/stock/UsaPrice.vue"),
-    //     meta: {
-    //         title: "美股資訊"
     //     },
     // },
 ];
