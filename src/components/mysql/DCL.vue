@@ -2,13 +2,10 @@
   <div>
     <div class="row m-4">
       <div class="col-12">
-        <CodeContainer :title="''">
+        <CodeContainer :title="'DCL'">
           <template v-slot:sourceCode>
             <pre>
-將容器與數據分離
-1. 數據的持久化
-2. 容器間數據共享
-3. 雙向綁定
+Data Control Language: 用戶管理 權限管理
             </pre>
           </template>
         </CodeContainer>
@@ -19,19 +16,19 @@
         <CodeContainer :title="''">
           <template v-slot:sourceCode>
             <pre>
-匿名掛載
-docker run -v /etc/nginx -p 80:80 -d nginx
+查詢用戶
+use mysq;
+selct * from user;
 
-具名掛載
-docker run -v v-nginx:/etc/nginx -p 80:80 -d nginx
+創建用戶
+create user 'user_name'@'localhost' identified by '1234';
+create user 'user_name'@'%' identified by '1234';
 
-指定路徑掛載
-docker run \
--v /home/mysql/conf:/etc/mysql/conf.d \
--v /home/mysql/data:/var/lib/mysql \
--e MYSQL_ROOT_PASSWORD=1234 \
--p 3306:3306 \
--d mysql:5.7.25
+刪除用戶
+drop user 'user_name'@'%';
+
+查看當前用戶
+select user();
             </pre>
           </template>
         </CodeContainer>
@@ -42,11 +39,15 @@ docker run \
         <CodeContainer :title="''">
           <template v-slot:sourceCode>
             <pre>
-docker volume ls
-docker volume create html
-docker volume inspect html // 查看詳細資訊
-docker volume rm html
-docker volume prune // 刪除未使用
+查詢權限
+show grants for 'user_name'@'localhost';
+
+授予權限
+grant all on db_name.table_name to 'user_name'@'localhost';
+                  (*.*)
+
+撤銷權限
+revoke all on db_name.table_name from 'user_name'@'localhost';
             </pre>
           </template>
         </CodeContainer>
@@ -58,7 +59,7 @@ docker volume prune // 刪除未使用
 <script>
 import CodeContainer from "@/components/shared/CodeContainer.vue";
 export default {
-  name: "Volume",
+  name: "DCL",
   components: {
     CodeContainer,
   },

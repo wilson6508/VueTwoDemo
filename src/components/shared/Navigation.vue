@@ -131,7 +131,9 @@ export default {
           label: "MySQL",
           path: "",
           children: [
+            { label: "DCL", path: "/MySQL/DCL" },
             { label: "DDL", path: "/MySQL/DDL" },
+            { label: "DML", path: "/MySQL/DML" },
             { label: "DQL", path: "/MySQL/DQL" },
           ],
         },

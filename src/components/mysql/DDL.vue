@@ -2,7 +2,18 @@
   <div>
     <div class="row m-4">
       <div class="col-12">
-        <CodeContainer :title="'database'">
+        <CodeContainer :title="'DDL'">
+          <template v-slot:sourceCode>
+            <pre>
+Data Definition Language: 定義數據庫、資料表、欄位
+            </pre>
+          </template>
+        </CodeContainer>
+      </div>
+    </div>
+    <div class="row m-4">
+      <div class="col-12">
+        <CodeContainer :title="'Database'">
           <template v-slot:sourceCode>
             <pre>
 create database db_name;
@@ -22,7 +33,7 @@ select database();
     </div>
     <div class="row m-4">
       <div class="col-12">
-        <CodeContainer :title="'table'">
+        <CodeContainer :title="'Table'">
           <template v-slot:sourceCode>
             <pre>
 show tables;

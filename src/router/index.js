@@ -212,10 +212,24 @@ const routes = [
     },
     // MySQL
     {
+        path: "/MySQL/DCL",
+        component: () => import("@/components/mysql/DCL.vue"),
+        meta: {
+            title: "DCL"
+        },
+    },
+    {
         path: "/MySQL/DDL",
         component: () => import("@/components/mysql/DDL.vue"),
         meta: {
             title: "DDL"
+        },
+    },
+    {
+        path: "/MySQL/DML",
+        component: () => import("@/components/mysql/DML.vue"),
+        meta: {
+            title: "DML"
         },
     },
     {
