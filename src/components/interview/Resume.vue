@@ -4,12 +4,10 @@
       <div class="col-md-8 col-12">
         <CodeContainer :title="''">
           <template v-slot:sourceCode>
-            <pre>
-vim docker-compose.yml
-docker-compose build --no-cache
-docker-compose up -d
-docker-compose down
-            </pre>
+            <div class="text-center m-5">
+              <img src="@/assets/structure.png" alt="" /><br>
+              <img src="@/assets/structure.png" alt="" />
+            </div>
           </template>
         </CodeContainer>
       </div>
@@ -20,7 +18,7 @@ docker-compose down
 <script>
 import CodeContainer from "@/components/shared/CodeContainer.vue";
 export default {
-  name: "Compose",
+  name: "Resume",
   components: {
     CodeContainer,
   },

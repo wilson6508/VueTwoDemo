@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="row m-4">
-      <div class="col-12">
+      <div class="col-md-8 col-12">
         <CodeContainer :title="''">
           <template v-slot:sourceCode>
             <pre>

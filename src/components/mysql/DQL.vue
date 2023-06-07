@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="row m-4">
-      <div class="col-12">
+      <div class="col-md-8 col-12">
         <CodeContainer :title="'DQL'">
           <template v-slot:sourceCode>
             <pre>
@@ -12,7 +12,7 @@ Data Query Language: 查詢資料表
       </div>
     </div>
     <div class="row m-4">
-      <div class="col-12">
+      <div class="col-md-8 col-12">
         <CodeContainer :title="'group by'">
           <template v-slot:sourceCode>
             <pre>
@@ -31,7 +31,7 @@ select address, count(*) from emp where age &lt; 30 group by address having coun
       </div>
     </div>
     <div class="row m-4">
-      <div class="col-12">
+      <div class="col-md-8 col-12">
         <CodeContainer :title="'limit'">
           <template v-slot:sourceCode>
             <pre>
@@ -52,7 +52,7 @@ select * from emp limit 10, 10;
       </div>
     </div>
     <div class="row m-4">
-      <div class="col-12">
+      <div class="col-md-8 col-12">
         <CodeContainer :title="'執行順序'">
           <template v-slot:sourceCode>
             <pre>

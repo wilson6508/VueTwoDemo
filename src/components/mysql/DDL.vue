@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="row m-4">
-      <div class="col-12">
+      <div class="col-md-8 col-12">
         <CodeContainer :title="'DDL'">
           <template v-slot:sourceCode>
             <pre>
@@ -12,7 +12,7 @@ Data Definition Language: 定義數據庫、資料表、欄位
       </div>
     </div>
     <div class="row m-4">
-      <div class="col-12">
+      <div class="col-md-8 col-12">
         <CodeContainer :title="'Database'">
           <template v-slot:sourceCode>
             <pre>
@@ -32,7 +32,7 @@ select database();
       </div>
     </div>
     <div class="row m-4">
-      <div class="col-12">
+      <div class="col-md-8 col-12">
         <CodeContainer :title="'Table'">
           <template v-slot:sourceCode>
             <pre>

@@ -7,21 +7,13 @@ const routes = [
     {
         path: "/",
         redirect: {
-            path: "/SpringBoot/Actuator",
+            path: "/Interview/Resume",
         },
     },
     {
         path: "*",
         redirect: {
-            path: "/SpringBoot/Actuator",
-        },
-    },
-    // Structure
-    {
-        path: "/Structure",
-        component: () => import("@/components/project/Structure.vue"),
-        meta: {
-            title: "Structure"
+            path: "/Interview/Resume",
         },
     },
     // Docker
@@ -60,111 +52,12 @@ const routes = [
             title: "Volume"
         },
     },
-    // Java
+    // Interview
     {
-        path: "/Java/Generics",
-        component: () => import("@/components/java/Generics.vue"),
+        path: "/Interview/Resume",
+        component: () => import("@/components/interview/Resume.vue"),
         meta: {
-            title: "Generics"
-        },
-    },
-    {
-        path: "/Java/InnerClass",
-        component: () => import("@/components/java/InnerClass.vue"),
-        meta: {
-            title: "InnerClass"
-        },
-    },
-    {
-        path: "/Java/Lambda",
-        component: () => import("@/components/java/Lambda.vue"),
-        meta: {
-            title: "Lambda"
-        },
-    },
-    {
-        path: "/Java/Reflection",
-        component: () => import("@/components/java/Reflection.vue"),
-        meta: {
-            title: "Reflection"
-        },
-    },
-    // SpringBoot
-    {
-        path: "/SpringBoot/Actuator",
-        component: () => import("@/components/springboot/Actuator.vue"),
-        meta: {
-            title: "Actuator"
-        },
-    },
-    {
-        path: "/SpringBoot/Aop",
-        component: () => import("@/components/springboot/Aop.vue"),
-        meta: {
-            title: "Aop"
-        },
-    },
-    {
-        path: "/SpringBoot/Cache",
-        component: () => import("@/components/springboot/Cache.vue"),
-        meta: {
-            title: "Cache"
-        },
-    },
-    {
-        path: "/SpringBoot/EhCache",
-        component: () => import("@/components/springboot/EhCache.vue"),
-        meta: {
-            title: "EhCache"
-        },
-    },
-    {
-        path: "/SpringBoot/GoogleSheet",
-        component: () => import("@/components/springboot/GoogleSheet.vue"),
-        meta: {
-            title: "GoogleSheet"
-        },
-    },
-    {
-        path: "/SpringBoot/Lombok",
-        component: () => import("@/components/springboot/Lombok.vue"),
-        meta: {
-            title: "Lombok"
-        },
-    },
-    {
-        path: "/SpringBoot/Profile",
-        component: () => import("@/components/springboot/Profile.vue"),
-        meta: {
-            title: "Profile"
-        },
-    },
-    {
-        path: "/SpringBoot/RequestTag",
-        component: () => import("@/components/springboot/RequestTag.vue"),
-        meta: {
-            title: "RequestTag"
-        },
-    },
-    {
-        path: "/SpringBoot/Retry",
-        component: () => import("@/components/springboot/Retry.vue"),
-        meta: {
-            title: "Retry"
-        },
-    },
-    {
-        path: "/SpringBoot/SimpleCache",
-        component: () => import("@/components/springboot/SimpleCache.vue"),
-        meta: {
-            title: "SimpleCache"
-        },
-    },
-    {
-        path: "/SpringBoot/UnitTesting",
-        component: () => import("@/components/springboot/UnitTesting.vue"),
-        meta: {
-            title: "UnitTesting"
+            title: "Resume"
         },
     },
     // Linux
@@ -303,7 +196,72 @@ const routes = [
             title: "String"
         },
     },
-    // Other
+    // Interview
+    // {
+    //     path: "/Interview/Fpc",
+    //     component: () => import("@/components/interview/Fpc.vue"),
+    //     meta: {
+    //         title: "Fpc"
+    //     },
+    // },
+    // {
+    //     path: "/Interview/Pegatron",
+    //     component: () => import("@/components/interview/Pegatron.vue"),
+    //     meta: {
+    //         title: "Pegatron"
+    //     },
+    // },
+    // {
+    //     path: "/Interview/Intelligent",
+    //     component: () => import("@/components/interview/Intelligent.vue"),
+    //     meta: {
+    //         title: "Intelligent"
+    //     },
+    // },
+    // {
+    //     path: "/Interview/OneZeroFour",
+    //     component: () => import("@/components/interview/OneZeroFour.vue"),
+    //     meta: {
+    //         title: "OneZeroFour"
+    //     },
+    // },
+    // {
+    //     path: "/Interview/Platinum",
+    //     component: () => import("@/components/interview/Platinum.vue"),
+    //     meta: {
+    //         title: "Platinum"
+    //     },
+    // },
+    // Java
+    // {
+    //     path: "/Java/Generics",
+    //     component: () => import("@/components/java/Generics.vue"),
+    //     meta: {
+    //         title: "Generics"
+    //     },
+    // },
+    // {
+    //     path: "/Java/InnerClass",
+    //     component: () => import("@/components/java/InnerClass.vue"),
+    //     meta: {
+    //         title: "InnerClass"
+    //     },
+    // },
+    // {
+    //     path: "/Java/Lambda",
+    //     component: () => import("@/components/java/Lambda.vue"),
+    //     meta: {
+    //         title: "Lambda"
+    //     },
+    // },
+    // {
+    //     path: "/Java/Reflection",
+    //     component: () => import("@/components/java/Reflection.vue"),
+    //     meta: {
+    //         title: "Reflection"
+    //     },
+    // },
+    // LeetCode
     // {
     //     path: "/LeetCode/1_TwoSum",
     //     component: () => import("@/components/leetCode/1_TwoSum.vue"),
@@ -353,39 +311,90 @@ const routes = [
     //         title: "804_UniqueMorseCode"
     //     },
     // },
+    // SpringBoot
     // {
-    //     path: "/Interview/Fpc",
-    //     component: () => import("@/components/interview/Fpc.vue"),
+    //     path: "/SpringBoot/Actuator",
+    //     component: () => import("@/components/springboot/Actuator.vue"),
     //     meta: {
-    //         title: "Fpc"
+    //         title: "Actuator"
     //     },
     // },
     // {
-    //     path: "/Interview/Pegatron",
-    //     component: () => import("@/components/interview/Pegatron.vue"),
+    //     path: "/SpringBoot/Aop",
+    //     component: () => import("@/components/springboot/Aop.vue"),
     //     meta: {
-    //         title: "Pegatron"
+    //         title: "Aop"
     //     },
     // },
     // {
-    //     path: "/Interview/Intelligent",
-    //     component: () => import("@/components/interview/Intelligent.vue"),
+    //     path: "/SpringBoot/Cache",
+    //     component: () => import("@/components/springboot/Cache.vue"),
     //     meta: {
-    //         title: "Intelligent"
+    //         title: "Cache"
     //     },
     // },
     // {
-    //     path: "/Interview/OneZeroFour",
-    //     component: () => import("@/components/interview/OneZeroFour.vue"),
+    //     path: "/SpringBoot/EhCache",
+    //     component: () => import("@/components/springboot/EhCache.vue"),
     //     meta: {
-    //         title: "OneZeroFour"
+    //         title: "EhCache"
     //     },
     // },
     // {
-    //     path: "/Interview/Platinum",
-    //     component: () => import("@/components/interview/Platinum.vue"),
+    //     path: "/SpringBoot/GoogleSheet",
+    //     component: () => import("@/components/springboot/GoogleSheet.vue"),
     //     meta: {
-    //         title: "Platinum"
+    //         title: "GoogleSheet"
+    //     },
+    // },
+    // {
+    //     path: "/SpringBoot/Lombok",
+    //     component: () => import("@/components/springboot/Lombok.vue"),
+    //     meta: {
+    //         title: "Lombok"
+    //     },
+    // },
+    // {
+    //     path: "/SpringBoot/Profile",
+    //     component: () => import("@/components/springboot/Profile.vue"),
+    //     meta: {
+    //         title: "Profile"
+    //     },
+    // },
+    // {
+    //     path: "/SpringBoot/RequestTag",
+    //     component: () => import("@/components/springboot/RequestTag.vue"),
+    //     meta: {
+    //         title: "RequestTag"
+    //     },
+    // },
+    // {
+    //     path: "/SpringBoot/Retry",
+    //     component: () => import("@/components/springboot/Retry.vue"),
+    //     meta: {
+    //         title: "Retry"
+    //     },
+    // },
+    // {
+    //     path: "/SpringBoot/SimpleCache",
+    //     component: () => import("@/components/springboot/SimpleCache.vue"),
+    //     meta: {
+    //         title: "SimpleCache"
+    //     },
+    // },
+    // {
+    //     path: "/SpringBoot/UnitTesting",
+    //     component: () => import("@/components/springboot/UnitTesting.vue"),
+    //     meta: {
+    //         title: "UnitTesting"
+    //     },
+    // },
+    // Project
+    // {
+    //     path: "/Structure",
+    //     component: () => import("@/components/project/Structure.vue"),
+    //     meta: {
+    //         title: "Structure"
     //     },
     // },
     // {

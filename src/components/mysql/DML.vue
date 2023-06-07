@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="row m-4">
-      <div class="col-12">
+      <div class="col-md-8 col-12">
         <CodeContainer :title="'DML'">
           <template v-slot:sourceCode>
             <pre>
@@ -12,7 +12,7 @@ Data Manipulation Language: 增刪改資料表
       </div>
     </div>
     <div class="row m-4">
-      <div class="col-12">
+      <div class="col-md-8 col-12">
         <CodeContainer :title="''">
           <template v-slot:sourceCode>
             <pre>

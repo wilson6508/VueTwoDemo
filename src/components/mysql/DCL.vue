@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="row m-4">
-      <div class="col-12">
+      <div class="col-md-8 col-12">
         <CodeContainer :title="'DCL'">
           <template v-slot:sourceCode>
             <pre>
@@ -12,7 +12,7 @@ Data Control Language: 用戶管理 權限管理
       </div>
     </div>
     <div class="row m-4">
-      <div class="col-12">
+      <div class="col-md-8 col-12">
         <CodeContainer :title="''">
           <template v-slot:sourceCode>
             <pre>
@@ -35,7 +35,7 @@ select user();
       </div>
     </div>
     <div class="row m-4">
-      <div class="col-12">
+      <div class="col-md-8 col-12">
         <CodeContainer :title="''">
           <template v-slot:sourceCode>
             <pre>
