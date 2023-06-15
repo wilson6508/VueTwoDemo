@@ -32,6 +32,13 @@ const routes = [
         },
     },
     {
+        path: "/Docker/Dockerfile",
+        component: () => import("@/components/docker/Dockerfile.vue"),
+        meta: {
+            title: "Dockerfile"
+        },
+    },
+    {
         path: "/Docker/Images",
         component: () => import("@/components/docker/Images.vue"),
         meta: {
@@ -103,6 +110,14 @@ const routes = [
             title: "Process"
         },
     },
+    // MessageQueue
+    {
+        path: "/MQ/BlockingQueue",
+        component: () => import("@/components/mq/BlockingQueue.vue"),
+        meta: {
+            title: "BlockingQueue"
+        },
+    },
     // MySQL
     {
         path: "/MySQL/DCL",
@@ -130,6 +145,13 @@ const routes = [
         component: () => import("@/components/mysql/DQL.vue"),
         meta: {
             title: "DQL"
+        },
+    },
+    {
+        path: "/MySQL/SubQuery",
+        component: () => import("@/components/mysql/SubQuery.vue"),
+        meta: {
+            title: "SubQuery"
         },
     },
     // Redis

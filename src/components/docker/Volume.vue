@@ -32,6 +32,13 @@ docker run \
 -e MYSQL_ROOT_PASSWORD=1234 \
 -p 3306:3306 \
 -d mysql:5.7.25
+
+繼承其它容器的volume
+docker run \
+--volumes-from 9e54cb1d266b \
+-e MYSQL_ROOT_PASSWORD=1234 \
+-p 3307:3306 \
+-d mysql:5.7.25
             </pre>
           </template>
         </CodeContainer>

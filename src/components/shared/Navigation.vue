@@ -99,6 +99,7 @@ export default {
           children: [
             { label: "Compose", path: "/Docker/Compose" },
             { label: "Container", path: "/Docker/Container" },
+            { label: "Dockerfile", path: "/Docker/Dockerfile" },
             { label: "Images", path: "/Docker/Images" },
             { label: "Network", path: "/Docker/Network" },
             { label: "Volume", path: "/Docker/Volume" },
@@ -129,6 +130,13 @@ export default {
           ],
         },
         {
+          label: "MQ",
+          path: "",
+          children: [
+            { label: "BlockingQueue", path: "/MQ/BlockingQueue" },
+          ],
+        },
+        {
           label: "MySQL",
           path: "",
           children: [
@@ -136,6 +144,7 @@ export default {
             { label: "DDL", path: "/MySQL/DDL" },
             { label: "DML", path: "/MySQL/DML" },
             { label: "DQL", path: "/MySQL/DQL" },
+            { label: "SubQuery", path: "/MySQL/SubQuery" },
           ],
         },
         {
