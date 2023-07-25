@@ -5,7 +5,7 @@
         <CodeContainer :title="'DDL'">
           <template v-slot:sourceCode>
             <pre>
-Data Definition Language: 定義數據庫、資料表、欄位
+Data Definition Language: 定義資料庫、資料表、欄位
             </pre>
           </template>
         </CodeContainer>

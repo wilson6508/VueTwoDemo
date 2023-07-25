@@ -17,8 +17,8 @@ Data Control Language: 用戶管理 權限管理
           <template v-slot:sourceCode>
             <pre>
 查詢用戶
-use mysq;
-selct * from user;
+use mysql;
+select * from user;
 
 創建用戶
 create user 'user_name'@'localhost' identified by '1234';

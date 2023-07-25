@@ -7,13 +7,13 @@ const routes = [
     {
         path: "/",
         redirect: {
-            path: "/Interview/Resume",
+            path: "/SpringBoot/Actuator",
         },
     },
     {
         path: "*",
         redirect: {
-            path: "/Interview/Resume",
+            path: "/SpringBoot/Actuator",
         },
     },
     // Docker
@@ -334,83 +334,83 @@ const routes = [
     //     },
     // },
     // SpringBoot
-    // {
-    //     path: "/SpringBoot/Actuator",
-    //     component: () => import("@/components/springboot/Actuator.vue"),
-    //     meta: {
-    //         title: "Actuator"
-    //     },
-    // },
-    // {
-    //     path: "/SpringBoot/Aop",
-    //     component: () => import("@/components/springboot/Aop.vue"),
-    //     meta: {
-    //         title: "Aop"
-    //     },
-    // },
-    // {
-    //     path: "/SpringBoot/Cache",
-    //     component: () => import("@/components/springboot/Cache.vue"),
-    //     meta: {
-    //         title: "Cache"
-    //     },
-    // },
-    // {
-    //     path: "/SpringBoot/EhCache",
-    //     component: () => import("@/components/springboot/EhCache.vue"),
-    //     meta: {
-    //         title: "EhCache"
-    //     },
-    // },
-    // {
-    //     path: "/SpringBoot/GoogleSheet",
-    //     component: () => import("@/components/springboot/GoogleSheet.vue"),
-    //     meta: {
-    //         title: "GoogleSheet"
-    //     },
-    // },
-    // {
-    //     path: "/SpringBoot/Lombok",
-    //     component: () => import("@/components/springboot/Lombok.vue"),
-    //     meta: {
-    //         title: "Lombok"
-    //     },
-    // },
-    // {
-    //     path: "/SpringBoot/Profile",
-    //     component: () => import("@/components/springboot/Profile.vue"),
-    //     meta: {
-    //         title: "Profile"
-    //     },
-    // },
-    // {
-    //     path: "/SpringBoot/RequestTag",
-    //     component: () => import("@/components/springboot/RequestTag.vue"),
-    //     meta: {
-    //         title: "RequestTag"
-    //     },
-    // },
-    // {
-    //     path: "/SpringBoot/Retry",
-    //     component: () => import("@/components/springboot/Retry.vue"),
-    //     meta: {
-    //         title: "Retry"
-    //     },
-    // },
-    // {
-    //     path: "/SpringBoot/SimpleCache",
-    //     component: () => import("@/components/springboot/SimpleCache.vue"),
-    //     meta: {
-    //         title: "SimpleCache"
-    //     },
-    // },
-    // {
-    //     path: "/SpringBoot/UnitTesting",
-    //     component: () => import("@/components/springboot/UnitTesting.vue"),
-    //     meta: {
-    //         title: "UnitTesting"
-    //     },
-    // },
+    {
+        path: "/SpringBoot/Actuator",
+        component: () => import("@/components/springboot/Actuator.vue"),
+        meta: {
+            title: "Actuator"
+        },
+    },
+    {
+        path: "/SpringBoot/Aop",
+        component: () => import("@/components/springboot/Aop.vue"),
+        meta: {
+            title: "Aop"
+        },
+    },
+    {
+        path: "/SpringBoot/Cache",
+        component: () => import("@/components/springboot/Cache.vue"),
+        meta: {
+            title: "Cache"
+        },
+    },
+    {
+        path: "/SpringBoot/EhCache",
+        component: () => import("@/components/springboot/EhCache.vue"),
+        meta: {
+            title: "EhCache"
+        },
+    },
+    {
+        path: "/SpringBoot/GoogleSheet",
+        component: () => import("@/components/springboot/GoogleSheet.vue"),
+        meta: {
+            title: "GoogleSheet"
+        },
+    },
+    {
+        path: "/SpringBoot/Lombok",
+        component: () => import("@/components/springboot/Lombok.vue"),
+        meta: {
+            title: "Lombok"
+        },
+    },
+    {
+        path: "/SpringBoot/Profile",
+        component: () => import("@/components/springboot/Profile.vue"),
+        meta: {
+            title: "Profile"
+        },
+    },
+    {
+        path: "/SpringBoot/RequestTag",
+        component: () => import("@/components/springboot/RequestTag.vue"),
+        meta: {
+            title: "RequestTag"
+        },
+    },
+    {
+        path: "/SpringBoot/Retry",
+        component: () => import("@/components/springboot/Retry.vue"),
+        meta: {
+            title: "Retry"
+        },
+    },
+    {
+        path: "/SpringBoot/SimpleCache",
+        component: () => import("@/components/springboot/SimpleCache.vue"),
+        meta: {
+            title: "SimpleCache"
+        },
+    },
+    {
+        path: "/SpringBoot/UnitTesting",
+        component: () => import("@/components/springboot/UnitTesting.vue"),
+        meta: {
+            title: "UnitTesting"
+        },
+    },
     // Project
     // {
     //     path: "/Structure",
