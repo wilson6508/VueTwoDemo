@@ -30,7 +30,7 @@
 
 <script>
 import axios from "axios";
-import BasicTable from "@/components/BasicTable.vue";
+import BasicTable from "@/components/project/BasicTable.vue";
 
 export default {
   name: "Description",

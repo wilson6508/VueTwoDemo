@@ -49,33 +49,64 @@ export default {
   data() {
     return {
       routesArr: [
-        // { label: "文字說明", path: "/Description", children: [] },
-        // { label: "功能展示", path: "/FlowChart", children: [] },
-        // { label: "UsaStock", path: "/UsaPrice", children: [] },
-        // { label: "Structure", path: "/Structure", children: [] },
-        // {
-        //   label: "Java",
-        //   path: "",
-        //   children: [
-        //     { label: "Generics", path: "/Java/Generics" },
-        //     { label: "InnerClass", path: "/Java/InnerClass" },
-        //     { label: "Lambda", path: "/Java/Lambda" },
-        //     { label: "Reflection", path: "/Java/Reflection" },
-        //   ],
-        // },
-        // {
-        //   label: "LeetCode",
-        //   path: "",
-        //   children: [
-        //     { label: "1_TwoSum", path: "/LeetCode/1_TwoSum" },
-        //     { label: "9_PalindromeNumber", path: "/LeetCode/9_PalindromeNumber" },
-        //     { label: "12_IntegerToRoman", path: "/LeetCode/12_IntegerToRoman" },
-        //     { label: "17_LetterCombinations", path: "/LeetCode/17_LetterCombinations" },
-        //     { label: "20_ValidParentheses", path: "/LeetCode/20_ValidParentheses" },
-        //     { label: "120_MinimumTotal", path: "/LeetCode/120_MinimumTotal" },
-        //     { label: "804_UniqueMorseCode", path: "/LeetCode/804_UniqueMorseCode" },
-        //   ],
-        // },
+        {
+          label: "Docker",
+          path: "",
+          children: [
+            { label: "Compose", path: "/Docker/Compose" },
+            { label: "Container", path: "/Docker/Container" },
+            { label: "Dockerfile", path: "/Docker/Dockerfile" },
+            { label: "Images", path: "/Docker/Images" },
+            { label: "Network", path: "/Docker/Network" },
+            { label: "Volume", path: "/Docker/Volume" },
+          ],
+        },
+        {
+          label: "Front",
+          path: "",
+          children: [
+            { label: "Axios", path: "/front/Axios" },
+          ],
+        },
+        {
+          label: "Interview",
+          path: "",
+          children: [
+            { label: "Resume", path: "/Interview/Resume" },
+            { label: "Fpc", path: "/Interview/Fpc" },
+            { label: "Pegatron", path: "/Interview/Pegatron" },
+            { label: "Intelligent", path: "/Interview/Intelligent" },
+            { label: "OneZeroFour", path: "/Interview/OneZeroFour" },
+            { label: "Platinum", path: "/Interview/Platinum" },
+          ],
+        },
+        { label: "文字說明", path: "/Description", children: [] },
+        { label: "功能展示", path: "/FlowChart", children: [] },
+        { label: "UsaStock", path: "/UsaPrice", children: [] },
+        { label: "Structure", path: "/Structure", children: [] },
+        {
+          label: "Java",
+          path: "",
+          children: [
+            { label: "Generics", path: "/Java/Generics" },
+            { label: "InnerClass", path: "/Java/InnerClass" },
+            { label: "Lambda", path: "/Java/Lambda" },
+            { label: "Reflection", path: "/Java/Reflection" },
+          ],
+        },
+        {
+          label: "LeetCode",
+          path: "",
+          children: [
+            { label: "1_TwoSum", path: "/LeetCode/1_TwoSum" },
+            { label: "9_PalindromeNumber", path: "/LeetCode/9_PalindromeNumber" },
+            { label: "12_IntegerToRoman", path: "/LeetCode/12_IntegerToRoman" },
+            { label: "17_LetterCombinations", path: "/LeetCode/17_LetterCombinations" },
+            { label: "20_ValidParentheses", path: "/LeetCode/20_ValidParentheses" },
+            { label: "120_MinimumTotal", path: "/LeetCode/120_MinimumTotal" },
+            { label: "804_UniqueMorseCode", path: "/LeetCode/804_UniqueMorseCode" },
+          ],
+        },
         {
           label: "SpringBoot",
           path: "",
@@ -94,34 +125,10 @@ export default {
           ],
         },
         {
-          label: "Docker",
-          path: "",
-          children: [
-            { label: "Compose", path: "/Docker/Compose" },
-            { label: "Container", path: "/Docker/Container" },
-            { label: "Dockerfile", path: "/Docker/Dockerfile" },
-            { label: "Images", path: "/Docker/Images" },
-            { label: "Network", path: "/Docker/Network" },
-            { label: "Volume", path: "/Docker/Volume" },
-          ],
-        },
-        // {
-        //   label: "Interview",
-        //   path: "",
-        //   children: [
-        //     { label: "Resume", path: "/Interview/Resume" },
-        //     // { label: "Fpc", path: "/Interview/Fpc" },
-        //     // { label: "Pegatron", path: "/Interview/Pegatron" },
-        //     // { label: "Intelligent", path: "/Interview/Intelligent" },
-        //     // { label: "OneZeroFour", path: "/Interview/OneZeroFour" },
-        //     // { label: "Platinum", path: "/Interview/Platinum" },
-        //   ],
-        // },
-        {
           label: "Linux",
           path: "",
           children: [
-            // { label: "Archive", path: "/Linux/Archive" },
+            { label: "Archive", path: "/Linux/Archive" },
             { label: "Awk", path: "/Linux/Awk" },
             { label: "ControlFlow", path: "/Linux/ControlFlow" },
             { label: "DeleteLog", path: "/Linux/DeleteLog" },
@@ -152,10 +159,10 @@ export default {
           path: "",
           children: [
             { label: "Hash", path: "/Redis/Hash" },
-            // { label: "Lock", path: "/Redis/Lock" },
-            // { label: "LogicalExpire", path: "/Redis/LogicalExpire" },
+            { label: "Lock", path: "/Redis/Lock" },
+            { label: "LogicalExpire", path: "/Redis/LogicalExpire" },
             { label: "Lua", path: "/Redis/Lua" },
-            // { label: "Mutex", path: "/Redis/Mutex" },
+            { label: "Mutex", path: "/Redis/Mutex" },
             { label: "Set", path: "/Redis/Set" },
             { label: "SortedSet", path: "/Redis/SortedSet" },
             { label: "Streams", path: "/Redis/Streams" },

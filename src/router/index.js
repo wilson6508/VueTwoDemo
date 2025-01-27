@@ -59,6 +59,14 @@ const routes = [
             title: "Volume"
         },
     },
+    // Front
+    {
+        path: "/front/Axios",
+        component: () => import("@/components/front/Axios.vue"),
+        meta: {
+            title: "Axios"
+        },
+    },
     // Interview
     {
         path: "/Interview/Resume",
@@ -219,120 +227,120 @@ const routes = [
         },
     },
     // Interview
-    // {
-    //     path: "/Interview/Fpc",
-    //     component: () => import("@/components/interview/Fpc.vue"),
-    //     meta: {
-    //         title: "Fpc"
-    //     },
-    // },
-    // {
-    //     path: "/Interview/Pegatron",
-    //     component: () => import("@/components/interview/Pegatron.vue"),
-    //     meta: {
-    //         title: "Pegatron"
-    //     },
-    // },
-    // {
-    //     path: "/Interview/Intelligent",
-    //     component: () => import("@/components/interview/Intelligent.vue"),
-    //     meta: {
-    //         title: "Intelligent"
-    //     },
-    // },
-    // {
-    //     path: "/Interview/OneZeroFour",
-    //     component: () => import("@/components/interview/OneZeroFour.vue"),
-    //     meta: {
-    //         title: "OneZeroFour"
-    //     },
-    // },
-    // {
-    //     path: "/Interview/Platinum",
-    //     component: () => import("@/components/interview/Platinum.vue"),
-    //     meta: {
-    //         title: "Platinum"
-    //     },
-    // },
+    {
+        path: "/Interview/Fpc",
+        component: () => import("@/components/interview/Fpc.vue"),
+        meta: {
+            title: "Fpc"
+        },
+    },
+    {
+        path: "/Interview/Pegatron",
+        component: () => import("@/components/interview/Pegatron.vue"),
+        meta: {
+            title: "Pegatron"
+        },
+    },
+    {
+        path: "/Interview/Intelligent",
+        component: () => import("@/components/interview/Intelligent.vue"),
+        meta: {
+            title: "Intelligent"
+        },
+    },
+    {
+        path: "/Interview/OneZeroFour",
+        component: () => import("@/components/interview/OneZeroFour.vue"),
+        meta: {
+            title: "OneZeroFour"
+        },
+    },
+    {
+        path: "/Interview/Platinum",
+        component: () => import("@/components/interview/Platinum.vue"),
+        meta: {
+            title: "Platinum"
+        },
+    },
     // Java
-    // {
-    //     path: "/Java/Generics",
-    //     component: () => import("@/components/java/Generics.vue"),
-    //     meta: {
-    //         title: "Generics"
-    //     },
-    // },
-    // {
-    //     path: "/Java/InnerClass",
-    //     component: () => import("@/components/java/InnerClass.vue"),
-    //     meta: {
-    //         title: "InnerClass"
-    //     },
-    // },
-    // {
-    //     path: "/Java/Lambda",
-    //     component: () => import("@/components/java/Lambda.vue"),
-    //     meta: {
-    //         title: "Lambda"
-    //     },
-    // },
-    // {
-    //     path: "/Java/Reflection",
-    //     component: () => import("@/components/java/Reflection.vue"),
-    //     meta: {
-    //         title: "Reflection"
-    //     },
-    // },
+    {
+        path: "/Java/Generics",
+        component: () => import("@/components/java/Generics.vue"),
+        meta: {
+            title: "Generics"
+        },
+    },
+    {
+        path: "/Java/InnerClass",
+        component: () => import("@/components/java/InnerClass.vue"),
+        meta: {
+            title: "InnerClass"
+        },
+    },
+    {
+        path: "/Java/Lambda",
+        component: () => import("@/components/java/Lambda.vue"),
+        meta: {
+            title: "Lambda"
+        },
+    },
+    {
+        path: "/Java/Reflection",
+        component: () => import("@/components/java/Reflection.vue"),
+        meta: {
+            title: "Reflection"
+        },
+    },
     // LeetCode
-    // {
-    //     path: "/LeetCode/1_TwoSum",
-    //     component: () => import("@/components/leetCode/1_TwoSum.vue"),
-    //     meta: {
-    //         title: "1_TwoSum"
-    //     },
-    // },
-    // {
-    //     path: "/LeetCode/9_PalindromeNumber",
-    //     component: () => import("@/components/leetCode/9_PalindromeNumber.vue"),
-    //     meta: {
-    //         title: "9_PalindromeNumber"
-    //     },
-    // },
-    // {
-    //     path: "/LeetCode/12_IntegerToRoman",
-    //     component: () => import("@/components/leetCode/12_IntegerToRoman.vue"),
-    //     meta: {
-    //         title: "12_IntegerToRoman"
-    //     },
-    // },
-    // {
-    //     path: "/LeetCode/17_LetterCombinations",
-    //     component: () => import("@/components/leetCode/17_LetterCombinations.vue"),
-    //     meta: {
-    //         title: "17_LetterCombinations"
-    //     },
-    // },
-    // {
-    //     path: "/LeetCode/20_ValidParentheses",
-    //     component: () => import("@/components/leetCode/20_ValidParentheses.vue"),
-    //     meta: {
-    //         title: "20_ValidParentheses"
-    //     },
-    // },
-    // {
-    //     path: "/LeetCode/120_MinimumTotal",
-    //     component: () => import("@/components/leetCode/120_MinimumTotal.vue"),
-    //     meta: {
-    //         title: "120_MinimumTotal"
-    //     },
-    // },
-    // {
-    //     path: "/LeetCode/804_UniqueMorseCode",
-    //     component: () => import("@/components/leetCode/804_UniqueMorseCode.vue"),
-    //     meta: {
-    //         title: "804_UniqueMorseCode"
-    //     },
-    // },
+    {
+        path: "/LeetCode/1_TwoSum",
+        component: () => import("@/components/leetCode/1_TwoSum.vue"),
+        meta: {
+            title: "1_TwoSum"
+        },
+    },
+    {
+        path: "/LeetCode/9_PalindromeNumber",
+        component: () => import("@/components/leetCode/9_PalindromeNumber.vue"),
+        meta: {
+            title: "9_PalindromeNumber"
+        },
+    },
+    {
+        path: "/LeetCode/12_IntegerToRoman",
+        component: () => import("@/components/leetCode/12_IntegerToRoman.vue"),
+        meta: {
+            title: "12_IntegerToRoman"
+        },
+    },
+    {
+        path: "/LeetCode/17_LetterCombinations",
+        component: () => import("@/components/leetCode/17_LetterCombinations.vue"),
+        meta: {
+            title: "17_LetterCombinations"
+        },
+    },
+    {
+        path: "/LeetCode/20_ValidParentheses",
+        component: () => import("@/components/leetCode/20_ValidParentheses.vue"),
+        meta: {
+            title: "20_ValidParentheses"
+        },
+    },
+    {
+        path: "/LeetCode/120_MinimumTotal",
+        component: () => import("@/components/leetCode/120_MinimumTotal.vue"),
+        meta: {
+            title: "120_MinimumTotal"
+        },
+    },
+    {
+        path: "/LeetCode/804_UniqueMorseCode",
+        component: () => import("@/components/leetCode/804_UniqueMorseCode.vue"),
+        meta: {
+            title: "804_UniqueMorseCode"
+        },
+    },
     // SpringBoot
     {
         path: "/SpringBoot/Actuator",
@@ -412,27 +420,27 @@ const routes = [
         },
     },
     // Project
-    // {
-    //     path: "/Structure",
-    //     component: () => import("@/components/project/Structure.vue"),
-    //     meta: {
-    //         title: "Structure"
-    //     },
-    // },
-    // {
-    //     path: "/Description",
-    //     component: () => import("@/components/Description.vue"),
-    //     meta: {
-    //         title: "文字說明"
-    //     },
-    // },
-    // {
-    //     path: "/FlowChart",
-    //     component: () => import("@/components/FlowChart.vue"),
-    //     meta: {
-    //         title: "功能展示"
-    //     },
-    // },
+    {
+        path: "/Structure",
+        component: () => import("@/components/project/Structure.vue"),
+        meta: {
+            title: "Structure"
+        },
+    },
+    {
+        path: "/Description",
+        component: () => import("@/components/project/Description.vue"),
+        meta: {
+            title: "文字說明"
+        },
+    },
+    {
+        path: "/FlowChart",
+        component: () => import("@/components/project/FlowChart.vue"),
+        meta: {
+            title: "功能展示"
+        },
+    },
 ];
 
 const router = new VueRouter({
